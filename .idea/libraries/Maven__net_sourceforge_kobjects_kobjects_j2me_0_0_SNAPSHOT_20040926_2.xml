@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sourceforge.kobjects:kobjects-j2me:0.0-SNAPSHOT-20040926-2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/kobjects/kobjects-j2me/0.0-SNAPSHOT-20040926-2/kobjects-j2me-0.0-SNAPSHOT-20040926-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/kobjects/kobjects-j2me/0.0-SNAPSHOT-20040926-2/kobjects-j2me-0.0-SNAPSHOT-20040926-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/kobjects/kobjects-j2me/0.0-SNAPSHOT-20040926-2/kobjects-j2me-0.0-SNAPSHOT-20040926-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

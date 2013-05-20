@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.android:android-support:v3">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v3/android-support-v3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v3/android-support-v3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v3/android-support-v3-sources.jar!/" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v13/src/ics" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v13/src/ics-mr1" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v13/src/java" />
+    </SOURCES>
+  </library>
+</component>

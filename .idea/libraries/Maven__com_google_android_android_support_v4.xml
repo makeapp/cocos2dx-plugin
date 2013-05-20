@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="Maven: com.google.android:android-support:v4">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v4/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v4/android-support-v4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/android/android-support/v4/android-support-v4-sources.jar!/" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/eclair" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/froyo" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/gingerbread" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/honeycomb" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/honeycomb_mr2" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/ics" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/ics-mr1" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/java" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/jellybean" />
+      <root url="file://D:/develop/android-sdk-windows/extras/android/compatibility/v4/src/jellybean-mr1" />
+    </SOURCES>
+  </library>
+</component>

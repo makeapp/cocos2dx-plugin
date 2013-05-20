@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.006" errors="0" skipped="0" tests="0" name="qianzhi.android.ksoap.HelloTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\develop\Java\jdk1.6.0_18-x64\jre\bin"/>
+    <property name="java.vm.version" value="16.0-b13"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\work\source\makeapp\module\makeapp-android"/>
+    <property name="java.runtime.version" value="1.6.0_18-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="D:\work\source\makeapp\module\makeapp-android"/>
+    <property name="java.endorsed.dirs" value="D:\develop\Java\jdk1.6.0_18-x64\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="D:\work\source\makeapp\module\makeapp-android\target\surefire\surefirebooter4584231023913105355.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\yuanyou\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows NT (unknown)"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\develop\Java\jdk1.6.0_18-x64\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\develop\JetBrains\idea12\ideaIU-129.400\bin\..\.\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\VanDyke Software\Clients\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;D:\develop\android-sdk-windows\tools;D:\develop\android-sdk-windows\platform-tools;D:\develop\Java\jdk1.7.0_15\bin;D:\develop\cygwin\bin;D:\develop\cygwin\usr\local\bin;C:\Imagination\PowerVR\GraphicsSDK\PVRVFrame\EmulationLibs\Windows_x86_64;D:\develop\appcode\AppCode2.0\bin;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\amd64;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;D:\develop\apache-ant-1.8.2\bin;d:\develop\java\jdk1.7.0_15\jre\bin"/>
+    <property name="surefire.test.class.path" value="D:\work\source\makeapp\module\makeapp-android\target\test-classes;D:\work\source\makeapp\module\makeapp-android\target\classes;D:\repository\com\google\android\android-framework\2.3.1\android-framework-2.3.1.jar;D:\repository\com\google\android\android\2.3.1\android-2.3.1.jar;D:\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\repository\org\apache\httpcomponents\httpclient\4.0.1\httpclient-4.0.1.jar;D:\repository\org\apache\httpcomponents\httpcore\4.0.1\httpcore-4.0.1.jar;D:\repository\commons-codec\commons-codec\1.3\commons-codec-1.3.jar;D:\repository\org\khronos\opengl-api\gl1.1-android-2.1_r1\opengl-api-gl1.1-android-2.1_r1.jar;D:\repository\xerces\xmlParserAPIs\2.6.2\xmlParserAPIs-2.6.2.jar;D:\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;D:\repository\com\google\android\android-support\v4\android-support-v4.jar;D:\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.0.Final\hibernate-jpa-2.0-api-1.0.0.Final.jar;D:\repository\org\json\json\20080701\json-20080701.jar;D:\repository\com\makeapp\makeapp-javase\3.0-SNAPSHOT\makeapp-javase-3.0-SNAPSHOT.jar;D:\repository\javax\xml\ws\jaxws-api\2.1\jaxws-api-2.1.jar;D:\repository\javax\xml\bind\jaxb-api\2.1\jaxb-api-2.1.jar;D:\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;D:\repository\javax\activation\activation\1.1\activation-1.1.jar;D:\repository\com\google\code\ksoap2-android\ksoap2-j2se\2.5.6\ksoap2-j2se-2.5.6.jar;D:\repository\com\google\code\ksoap2-android\ksoap2-base\2.5.6\ksoap2-base-2.5.6.jar;D:\repository\net\sourceforge\kxml\kxml\2.2.4\kxml-2.2.4.jar;D:\repository\org\xmlpull\xmlpull\1.1.3.3\xmlpull-1.1.3.3.jar;D:\repository\net\sourceforge\kobjects\kobjects-j2me\0.0-SNAPSHOT-20040926-2\kobjects-j2me-0.0-SNAPSHOT-20040926-2.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler"/>
+    <property name="os.version" value="6.2"/>
+    <property name="user.home" value="C:\Users\yuanyou"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="yuanyou"/>
+    <property name="java.class.path" value="D:\work\source\makeapp\module\makeapp-android\target\test-classes;D:\work\source\makeapp\module\makeapp-android\target\classes;D:\repository\com\google\android\android-framework\2.3.1\android-framework-2.3.1.jar;D:\repository\com\google\android\android\2.3.1\android-2.3.1.jar;D:\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\repository\org\apache\httpcomponents\httpclient\4.0.1\httpclient-4.0.1.jar;D:\repository\org\apache\httpcomponents\httpcore\4.0.1\httpcore-4.0.1.jar;D:\repository\commons-codec\commons-codec\1.3\commons-codec-1.3.jar;D:\repository\org\khronos\opengl-api\gl1.1-android-2.1_r1\opengl-api-gl1.1-android-2.1_r1.jar;D:\repository\xerces\xmlParserAPIs\2.6.2\xmlParserAPIs-2.6.2.jar;D:\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar;D:\repository\com\google\android\android-support\v4\android-support-v4.jar;D:\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.0.Final\hibernate-jpa-2.0-api-1.0.0.Final.jar;D:\repository\org\json\json\20080701\json-20080701.jar;D:\repository\com\makeapp\makeapp-javase\3.0-SNAPSHOT\makeapp-javase-3.0-SNAPSHOT.jar;D:\repository\javax\xml\ws\jaxws-api\2.1\jaxws-api-2.1.jar;D:\repository\javax\xml\bind\jaxb-api\2.1\jaxb-api-2.1.jar;D:\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;D:\repository\javax\activation\activation\1.1\activation-1.1.jar;D:\repository\com\google\code\ksoap2-android\ksoap2-j2se\2.5.6\ksoap2-j2se-2.5.6.jar;D:\repository\com\google\code\ksoap2-android\ksoap2-base\2.5.6\ksoap2-base-2.5.6.jar;D:\repository\net\sourceforge\kxml\kxml\2.2.4\kxml-2.2.4.jar;D:\repository\org\xmlpull\xmlpull\1.1.3.3\xmlpull-1.1.3.3.jar;D:\repository\net\sourceforge\kobjects\kobjects-j2me\0.0-SNAPSHOT-20040926-2\kobjects-j2me-0.0-SNAPSHOT-20040926-2.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\develop\Java\jdk1.6.0_18-x64\jre"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_18"/>
+    <property name="java.ext.dirs" value="D:\develop\Java\jdk1.6.0_18-x64\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\develop\Java\jdk1.6.0_18-x64\jre\lib\resources.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\lib\rt.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\lib\sunrsasign.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\lib\jsse.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\lib\jce.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\lib\charsets.jar;D:\develop\Java\jdk1.6.0_18-x64\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="D:\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+</testsuite>
