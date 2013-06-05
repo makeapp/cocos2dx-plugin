@@ -33,7 +33,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.json:json:20080701" level="project" />
     <orderEntry type="library" name="Maven: com.google.android:android-support:v4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: com.makeapp:makeapp-javase:3.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.makeapp:makeapp-javase:4.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.ws:jaxws-api:2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.bind:jaxb-api:2.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />

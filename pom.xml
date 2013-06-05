@@ -4,7 +4,7 @@
   <groupId>com.makeapp</groupId>
   <artifactId>makeapp-android</artifactId>
   <packaging>jar</packaging>
-  <version>3.0-SNAPSHOT</version>
+  <version>4.0-SNAPSHOT</version>
   <name>makeapp-android</name>
 
   <dependencies>
@@ -46,7 +46,7 @@
     <dependency>
       <groupId>com.makeapp</groupId>
       <artifactId>makeapp-javase</artifactId>
-      <version>3.0-SNAPSHOT</version>
+      <version>4.0-SNAPSHOT</version>
     </dependency>
 
     <dependency>
