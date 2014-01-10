@@ -34,28 +34,28 @@ public abstract class ArrayListAdapter<T> extends ArrayAdapter
         this.layoutId = textViewResourceId;
     }
 
-    public ArrayListAdapter(Context context, int textViewResourceId, Object[] objects)
+    public ArrayListAdapter(Context context, int textViewResourceId, T[] objects)
     {
         super(context, textViewResourceId, objects);
         layoutInflater = LayoutInflater.from(context);
         this.layoutId = textViewResourceId;
     }
 
-    public ArrayListAdapter(Context context, int resource, int textViewResourceId, Object[] objects)
+    public ArrayListAdapter(Context context, int resource, int textViewResourceId, T[] objects)
     {
         super(context, resource, textViewResourceId, objects);
         layoutInflater = LayoutInflater.from(context);
         this.layoutId = textViewResourceId;
     }
 
-    public ArrayListAdapter(Context context, int textViewResourceId, List objects)
+    public ArrayListAdapter(Context context, int textViewResourceId, List<T> objects)
     {
         super(context, textViewResourceId, objects);
         layoutInflater = LayoutInflater.from(context);
         this.layoutId = textViewResourceId;
     }
 
-    public ArrayListAdapter(Context context, int resource, int textViewResourceId, List objects)
+    public ArrayListAdapter(Context context, int resource, int textViewResourceId, List<T> objects)
     {
         super(context, resource, textViewResourceId, objects);
         layoutInflater = LayoutInflater.from(context);
@@ -64,18 +64,18 @@ public abstract class ArrayListAdapter<T> extends ArrayAdapter
 
     public View getView(int position, View convertView, ViewGroup parent)
     {
-        if (convertView == null) {
-            convertView = inflateView(layoutInflater,parent,position);
-        }
-
         T t = (T) getItem(position);
+
+        if (convertView == null) {
+            convertView = inflateView(layoutInflater, parent, t, position);
+        }
 
         fillView(parent, convertView, t, position);
 
         return convertView;
     }
 
-    public View inflateView(LayoutInflater layoutInflater,ViewGroup parent, int position)
+    public View inflateView(LayoutInflater layoutInflater, ViewGroup parent, T t, int position)
     {
         return layoutInflater.inflate(layoutId, null);
     }

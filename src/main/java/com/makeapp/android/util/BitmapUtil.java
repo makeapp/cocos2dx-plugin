@@ -1,17 +1,23 @@
 package com.makeapp.android.util;
 
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.*;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
-import android.view.View;
-import com.makeapp.javase.util.StreamUtil;
-
-import java.io.*;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.*;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.util.Log;
+import android.view.View;
+import com.makeapp.javase.lang.StringUtil;
+import com.makeapp.javase.util.StreamUtil;
 
 
 /**
@@ -22,6 +28,90 @@ import java.net.URLConnection;
  */
 public class BitmapUtil
 {
+    public static Drawable getThumbnailsDrawable(String file)
+    {
+        Bitmap bitmap = getThumbnails(file);
+        if (bitmap != null) {
+            BitmapDrawable d = new BitmapDrawable(bitmap);
+            d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
+            return d;
+        }
+        return null;
+    }
+
+    public static Drawable getBitmapDrawable(Bitmap bitmap)
+    {
+        if (bitmap != null) {
+            BitmapDrawable d = new BitmapDrawable(bitmap);
+            d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
+            return d;
+        }
+        return null;
+    }
+
+    public static Drawable getBitmapDrawable(Bitmap bitmap, Rect bound)
+    {
+        if (bitmap != null) {
+            BitmapDrawable d = new BitmapDrawable(bitmap);
+            d.setBounds(bound);
+            return d;
+        }
+        return null;
+    }
+
+    public static Bitmap getThumbnails(String file)
+    {
+        if (StringUtil.isInvalid(file)) {
+            return null;
+        }
+
+        File f = new File(file);
+        if (!f.exists()) {
+            return null;
+        }
+        int sampleSize = getSampleSize(f.length());
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = false;
+        options.inSampleSize = sampleSize;
+        return BitmapFactory.decodeFile(file, options);
+    }
+
+    public static Bitmap getThumbnails(InputStream inputStream, long size)
+    {
+        int sampleSize = getSampleSize(size);
+        if (sampleSize > 0) {
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = false;
+            options.inSampleSize = sampleSize;
+            return BitmapFactory.decodeStream(inputStream, null, options);
+        }
+        else {
+            return BitmapFactory.decodeStream(inputStream);
+        }
+    }
+
+    private static int getSampleSize(long size)
+    {
+        if (size == -1) {
+            return -1;
+        }
+
+        int sampleSize = 4;
+
+        if (size <= 200 * 1024) {
+            sampleSize = 1;
+        }
+        else if (size <= 1024 * 1024) {
+            sampleSize = 2;
+        }
+        else if (size <= 100 * 1024 * 1024) {
+            sampleSize = 4;
+        }
+        else {
+            sampleSize = 10;
+        }
+        return sampleSize;
+    }
 
     public static Bitmap createBitmap(View view, int l, int t, int w, int h)
     {
@@ -88,10 +178,30 @@ public class BitmapUtil
         int height = bitmap.getHeight();
         float scaleWidth = ((float) newWidth) / width;
         float scaleHeight = ((float) newHeight) / height;
+        if (newWidth == -1 && newHeight == -1) {
+            return bitmap;
+        }
+        else if (newWidth == -1) {
+            scaleWidth = scaleHeight;
+        }
+        else if (newHeight == -1) {
+            scaleHeight = scaleWidth;
+        }
+
         Matrix matrix = new Matrix();     // resize the bit map
         matrix.postScale(scaleWidth, scaleHeight);
-        Bitmap resizedBitmap = Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, true);
-        return resizedBitmap;
+        return Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, true);
+    }
+
+    public static Bitmap resizeBitmap(Bitmap bitmap, float scale)
+    {
+        int width = bitmap.getWidth();
+        int height = bitmap.getHeight();
+        float scaleWidth = width * scale;
+        float scaleHeight = height * scale;
+        Matrix matrix = new Matrix();     // resize the bit map
+        matrix.postScale(scaleWidth, scaleHeight);
+        return Bitmap.createBitmap(bitmap, 0, 0, width, height, matrix, true);
     }
 
     /**

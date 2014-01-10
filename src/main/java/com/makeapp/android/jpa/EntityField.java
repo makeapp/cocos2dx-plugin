@@ -1,23 +1,21 @@
 package com.makeapp.android.jpa;
 
-import com.makeapp.android.jpa.metamodel.Value;
-import com.makeapp.javase.util.DataUtil;
-
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
+import com.makeapp.javase.util.DataUtil;
 
 /**
  * Created by IntelliJ IDEA.
  * User: yuanyou
  * Date: 11-5-13
- * Time: ÏÂÎç4:31
+ * Time: ï¿½ï¿½ï¿½ï¿½4:31
  */
 public class EntityField
 {
     private String columeName;
     private Class type;
-    private Value value;
     private Field field;
 
     public Field getField()
@@ -174,10 +172,5 @@ public class EntityField
     public Class getType()
     {
         return type;
-    }
-
-    public Value getValue()
-    {
-        return value;
     }
 }

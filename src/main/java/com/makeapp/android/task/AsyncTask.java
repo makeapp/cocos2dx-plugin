@@ -145,6 +145,7 @@ public abstract class AsyncTask<Params, Progress, Result>
     private static final int MESSAGE_POST_PROGRESS = 0x2;
     private static final int MESSAGE_POST_CANCEL = 0x3;
     private static final int MESSAGE_POST_TIMEOUT = 0x4;
+    private static final int MESSAGE_POST_EXCEPTION = 0x5;
     private static final InternalHandler sHandler = new InternalHandler();
     private WorkerRunnable<Params, Result> mWorker;
     private FutureTask<Result> mFuture;
@@ -186,8 +187,9 @@ public abstract class AsyncTask<Params, Progress, Result>
                     android.util.Log.w(LOG_TAG, e);
                 }
                 catch (ExecutionException e) {
-                    throw new RuntimeException("An error occured while executing doInBackground()",
-                        e.getCause());
+                    message = sHandler.obtainMessage(MESSAGE_POST_EXCEPTION, new AsyncTaskResult<Result>(AsyncTask.this, (Result[]) null, e.getCause()));
+                    message.sendToTarget();
+                    return;
                 }
                 catch (CancellationException e) {
                     message = sHandler.obtainMessage(MESSAGE_POST_CANCEL,
@@ -196,8 +198,9 @@ public abstract class AsyncTask<Params, Progress, Result>
                     return;
                 }
                 catch (Throwable t) {
-                    throw new RuntimeException("An error occured while executing "
-                        + "doInBackground()", t);
+                    message = sHandler.obtainMessage(MESSAGE_POST_EXCEPTION, new AsyncTaskResult<Result>(AsyncTask.this, (Result[]) null, t));
+                    message.sendToTarget();
+                    return;
                 }
                 if (timeoutFuture != null) {
                     timeoutFuture.cancel(true);
@@ -291,6 +294,14 @@ public abstract class AsyncTask<Params, Progress, Result>
 
     }
 
+    protected void onException(Throwable throwable)
+    {
+        if (throwable != null) {
+            throwable.printStackTrace();
+        }
+    }
+
+
     /**
      * Returns <tt>true</tt> if this task was cancelled before it completed
      * normally.
@@ -336,12 +347,10 @@ public abstract class AsyncTask<Params, Progress, Result>
      *
      * @return The computed result.
      *
-     * @throws java.util.concurrent.CancellationException
-     *                              If the computation was cancelled.
-     * @throws java.util.concurrent.ExecutionException
-     *                              If the computation threw an exception.
-     * @throws InterruptedException If the current thread was interrupted
-     *                              while waiting.
+     * @throws java.util.concurrent.CancellationException If the computation was cancelled.
+     * @throws java.util.concurrent.ExecutionException    If the computation threw an exception.
+     * @throws InterruptedException                       If the current thread was interrupted
+     *                                                    while waiting.
      */
     public final Result get() throws InterruptedException, ExecutionException
     {
@@ -357,14 +366,11 @@ public abstract class AsyncTask<Params, Progress, Result>
      *
      * @return The computed result.
      *
-     * @throws java.util.concurrent.CancellationException
-     *                              If the computation was cancelled.
-     * @throws java.util.concurrent.ExecutionException
-     *                              If the computation threw an exception.
-     * @throws InterruptedException If the current thread was interrupted
-     *                              while waiting.
-     * @throws java.util.concurrent.TimeoutException
-     *                              If the wait timed out.
+     * @throws java.util.concurrent.CancellationException If the computation was cancelled.
+     * @throws java.util.concurrent.ExecutionException    If the computation threw an exception.
+     * @throws InterruptedException                       If the current thread was interrupted
+     *                                                    while waiting.
+     * @throws java.util.concurrent.TimeoutException      If the wait timed out.
      */
     public final Result get(long timeout, TimeUnit unit)
         throws InterruptedException,
@@ -467,7 +473,7 @@ public abstract class AsyncTask<Params, Progress, Result>
 
     public final AsyncTask<Params, Progress, Result> execute(final long timeout, final boolean mayInterruptIfRunning, Params... params)
     {
-        return executeTimeout(timeout,mayInterruptIfRunning,params);
+        return executeTimeout(timeout, mayInterruptIfRunning, params);
     }
 
     public final AsyncTask<Params, Progress, Result> executeTimeout(final long timeout, final boolean mayInterruptIfRunning, Params... params)
@@ -582,11 +588,16 @@ public abstract class AsyncTask<Params, Progress, Result>
                     break;
                 case MESSAGE_POST_CANCEL:
                     result.mTask.onCancelled();
-                    result.mTask.mStatus=Status.FINISHED;
+                    result.mTask.mStatus = Status.FINISHED;
                     break;
                 case MESSAGE_POST_TIMEOUT:
                     result.mTask.onTimeout();
-                    result.mTask.mStatus=Status.FINISHED;
+                    result.mTask.mStatus = Status.FINISHED;
+                    break;
+
+                case MESSAGE_POST_EXCEPTION:
+                    result.mTask.onException(result.getThrowable());
+                    result.mTask.mStatus = Status.FINISHED;
                     break;
             }
         }
@@ -603,6 +614,24 @@ public abstract class AsyncTask<Params, Progress, Result>
     {
         final AsyncTask mTask;
         final Data[] mData;
+        Throwable throwable;
+
+        private Throwable getThrowable()
+        {
+            return throwable;
+        }
+
+        private void setThrowable(Throwable throwable)
+        {
+            this.throwable = throwable;
+        }
+
+        private AsyncTaskResult(AsyncTask mTask, Data[] mData, Throwable throwable)
+        {
+            this.throwable = throwable;
+            this.mData = mData;
+            this.mTask = mTask;
+        }
 
         AsyncTaskResult(AsyncTask task, Data... data)
         {

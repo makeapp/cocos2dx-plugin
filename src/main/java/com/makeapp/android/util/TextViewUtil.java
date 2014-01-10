@@ -5,7 +5,9 @@ package com.makeapp.android.util;
 
 import android.app.Activity;
 import android.text.Editable;
+import android.text.Html;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import com.makeapp.javase.lang.StringUtil;
 import com.makeapp.javase.util.DataUtil;
@@ -76,10 +78,34 @@ public class TextViewUtil extends ViewUtil
         return null;
     }
 
+    public static String getTextHtml(TextView textView)
+    {
+        if (textView != null) {
+            CharSequence charSequence = textView.getText();
+            if (charSequence instanceof String) {
+                return ((String) charSequence).trim();
+            }
+            else if (charSequence instanceof Editable) {
+                Editable editable = (Editable) charSequence;
+                return com.makeapp.android.text.Html.toHtml(editable);
+            }
+            else {
+                return charSequence.toString().trim();
+            }
+        }
+        return null;
+    }
+
     public static String getTextString(Object activity, int editTextId)
     {
         TextView textView = (TextView) ViewUtil.findViewById(activity, editTextId);
         return getTextString(textView);
+    }
+
+    public static String getTextHtml(Object activity, int editTextId)
+    {
+        TextView textView = (TextView) ViewUtil.findViewById(activity, editTextId);
+        return getTextHtml(textView);
     }
 
     public static String getTextString(Object activity, int editTextId, String defValue)

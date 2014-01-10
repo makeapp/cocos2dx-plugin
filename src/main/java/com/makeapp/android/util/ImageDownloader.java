@@ -24,7 +24,6 @@ import java.io.InputStream;
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 import android.graphics.Bitmap;
@@ -36,6 +35,7 @@ import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import com.makeapp.javase.file.FileUtil;
 import com.makeapp.javase.lang.StringUtil;
@@ -77,6 +77,10 @@ public class ImageDownloader
      */
     public void download(String url, ImageView imageView)
     {
+        if (StringUtil.isInvalid(url) || imageView == null) {
+            return;
+        }
+
         resetPurgeTimer();
         Bitmap bitmap = getBitmapFromCache(url);
 
@@ -86,6 +90,7 @@ public class ImageDownloader
         else {
             cancelPotentialDownload(url, imageView);
             imageView.setImageBitmap(bitmap);
+            imageView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -118,7 +123,7 @@ public class ImageDownloader
                     File file = new File(dir, Base64.encodeToString(url) + "." + extName);
                     Bitmap bitmap = null;
                     if (file.exists()) {
-                        bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+                        bitmap = BitmapUtil.getThumbnails(file.getAbsolutePath());
                     }
                     else {
                         bitmap = downloadBitmap(url, file);
@@ -126,6 +131,7 @@ public class ImageDownloader
 
                     addBitmapToCache(url, bitmap);
                     imageView.setImageBitmap(bitmap);
+                    imageView.setVisibility(View.VISIBLE);
                     break;
 
                 case NO_DOWNLOADED_DRAWABLE:
@@ -172,7 +178,7 @@ public class ImageDownloader
      * @param imageView Any imageView
      *
      * @return Retrieve the currently active download task (if any) associated with this imageView.
-     *         null if there is no such task.
+     * null if there is no such task.
      */
     private static BitmapDownloaderTask getBitmapDownloaderTask(ImageView imageView)
     {
@@ -218,10 +224,10 @@ public class ImageDownloader
                         finally {
                             StreamUtil.close(fileOut);
                         }
-                        return BitmapFactory.decodeFile(file.getAbsolutePath());
+                        return BitmapUtil.getThumbnails(file.getAbsolutePath()); //BitmapFactory.decodeFile(file.getAbsolutePath());
                     }
                     else {
-                        return BitmapFactory.decodeStream(new FlushedInputStream(inputStream));
+                        return BitmapUtil.getThumbnails(new FlushedInputStream(inputStream),-1);
                     }
                 }
                 finally {
@@ -314,7 +320,7 @@ public class ImageDownloader
             fileName = StringUtil.replace(fileName, '/', "_");
             File file = new File(dir, fileName + "." + extName);
             if (file.exists()) {
-                return BitmapFactory.decodeFile(file.getAbsolutePath());
+                return BitmapUtil.getThumbnails(file.getAbsolutePath());
             }
             else {
                 return downloadBitmap(url, file);
@@ -343,6 +349,7 @@ public class ImageDownloader
                 // Or if we don't use any bitmap to task association (NO_DOWNLOADED_DRAWABLE mode)
                 if ((this == bitmapDownloaderTask) || (mode != Mode.CORRECT)) {
                     imageView.setImageBitmap(bitmap);
+                    imageView.setVisibility(View.VISIBLE);
                 }
             }
         }
@@ -390,21 +397,19 @@ public class ImageDownloader
     private static final int DELAY_BEFORE_PURGE = 10 * 1000; // in milliseconds
 
     // Hard cache, with a fixed maximum capacity and a life duration
-    private final HashMap<String, Bitmap> sHardBitmapCache =
-        new LinkedHashMap<String, Bitmap>(HARD_CACHE_CAPACITY / 2, 0.75f, true)
-        {
-            @Override
-            protected boolean removeEldestEntry(LinkedHashMap.Entry<String, Bitmap> eldest)
-            {
-                if (size() > HARD_CACHE_CAPACITY) {
-                    // Entries push-out of hard reference cache are transferred to soft reference cache
-                    sSoftBitmapCache.put(eldest.getKey(), new SoftReference<Bitmap>(eldest.getValue()));
-                    return true;
-                }
-                else
-                    return false;
-            }
-        };
+    private final HashMap<String, Bitmap> sHardBitmapCache = new HashMap<String, Bitmap>(HARD_CACHE_CAPACITY / 2, 0.75f)
+    {
+//        protected boolean removeEldestEntry(HashMap.Entry<String, Bitmap> eldest)
+//        {
+//            if (size() > HARD_CACHE_CAPACITY) {
+//                // Entries push-out of hard reference cache are transferred to soft reference cache
+//                sSoftBitmapCache.put(eldest.getKey(), new SoftReference<Bitmap>(eldest.getValue()));
+//                return true;
+//            }
+//            else
+//                return false;
+//        }
+    };
 
     // Soft cache for bitmaps kicked out of hard cache
     private final static ConcurrentHashMap<String, SoftReference<Bitmap>> sSoftBitmapCache =

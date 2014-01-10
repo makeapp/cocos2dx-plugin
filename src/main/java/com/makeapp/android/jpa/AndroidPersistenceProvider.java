@@ -1,23 +1,21 @@
 package com.makeapp.android.jpa;
 
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.spi.PersistenceProvider;
+import javax.xml.parsers.DocumentBuilderFactory;
+
 import com.makeapp.javase.log.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.spi.PersistenceProvider;
-import javax.persistence.spi.PersistenceUnitInfo;
-import javax.persistence.spi.ProviderUtil;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author <a href="mailto:yuanyou@shqianzhi.com">yuanyou</a>
- * @version $Date:10-11-22 ÏÂÎç5:55 $
+ * @version $Date:10-11-22 ï¿½ï¿½ï¿½ï¿½5:55 $
  *          $Id$
  */
 public class AndroidPersistenceProvider
@@ -107,13 +105,13 @@ public class AndroidPersistenceProvider
         return null;
     }
 
-    public EntityManagerFactory createContainerEntityManagerFactory(PersistenceUnitInfo info, Map map)
-    {
-        return createEntityManagerFactory(info.getPersistenceUnitName(), null);
-    }
+//    public EntityManagerFactory createContainerEntityManagerFactory(PersistenceUnitInfo info, Map map)
+//    {
+//        return createEntityManagerFactory(info.getPersistenceUnitName(), null);
+//    }
 
-    public ProviderUtil getProviderUtil()
-    {
-        return null;
-    }
+//    public ProviderUtil getProviderUtil()
+//    {
+//        return null;
+//    }
 }

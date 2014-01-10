@@ -25,8 +25,193 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="8126bf09-cf81-4376-8c60-24381de86d60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_makeapp_makeapp_javase_4_0_SNAPSHOT.xml" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_makeapp_makeapp_javase_3_0_SNAPSHOT.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp/android" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/image" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp/android/jpa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/media" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/text" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/DrawableSwitch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/text/Html.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/image/ImageListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/LoopAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/MediaStoreUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/RadioGroupUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteFileTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteImageTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteThumbnailTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/SimpleExpandableListAdapter.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kobjects_kobjects_j2me_0_0_SNAPSHOT_20040926_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kxml_kxml_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlpull_xmlpull_1_1_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_android_android_2_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_android_android_framework_2_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_code_ksoap2_android_ksoap2_base_2_5_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_code_ksoap2_android_ksoap2_j2se_2_5_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_makeapp_makeapp_javase_4_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__commons_codec_commons_codec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_bind_jaxb_api_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_stream_stax_api_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_ws_jaxws_api_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_json_json_20080701.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__xerces_xmlParserAPIs_2_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__xpp3_xpp3_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\action\AndroidAction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\action\AndroidClientAction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\adapter\CustomListAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\adapter\ProgressAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\AbstractNode.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\BasicPathUsageException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CollectionJoinImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaBuilderImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaQueryCompiler.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaQueryImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaSubqueryImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ExpressionImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\FromImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\IllegalDereferenceException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\JoinImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ListJoinImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\MapJoinImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\OrderImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ParameterContainer.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ParameterRegistry.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\PathImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\PathSource.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\QueryStructure.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\Renderable.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\SelectionImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\SetJoinImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\TupleElementImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ValueHandlerFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\AbstractTupleElement.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\BinaryArithmeticOperation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\BinaryOperatorExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\CoalesceExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\CompoundSelectionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ConcatExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\EntityTypeExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ExpressionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ListIndexExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\LiteralExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\MapEntryExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\NullLiteralExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\NullifExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ParameterExpressionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\PathTypeExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SearchedCaseExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SelectionImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SimpleCaseExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SizeOfCollectionExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SubqueryComparisonModifierExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\UnaryArithmeticOperation.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\UnaryOperatorExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\AbsFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\AggregationFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\BasicFunctionExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CastFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentDateFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentTimeFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentTimestampFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\FunctionExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LengthFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LocateFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LowerFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\ParameterizedFunctionExpression.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\SqrtFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\SubstringFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\TrimFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\UpperFunction.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractFromImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractJoinImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractPathImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\CollectionAttributeJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\ListAttributeJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\MapAttributeJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\MapKeyHelpers.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\PluralAttributeJoinSupport.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\PluralAttributePath.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\RootImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SetAttributeJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SingularAttributeJoin.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SingularAttributePath.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\AbstractPredicateImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\AbstractSimplePredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BetweenPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanAssertionPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanExpressionPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanStaticAssertionPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ComparisonPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\CompoundPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ExistsPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ExplicitTruthValueCheck.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\InPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\IsEmptyPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\LikePredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\MemberOfPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\NullnessPredicate.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\TruthValue.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractAttribute.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractIdentifiableType.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractManagedType.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractType.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AttributeFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AttributeImplementor.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\BasicTypeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\EmbeddableTypeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\EntityTypeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MappedSuperclassTypeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MetadataContext.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MetamodelImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\PluralAttributeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\SingularAttributeImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\Value.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/action" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/expression" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/expression/function" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/metamodel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/path" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/predicate" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManagerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManagerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidJPAApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidJPAApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/activity/AsyncTaskActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/activity/AsyncTaskActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/CompoundButtonUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/CompoundButtonUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/EditTextUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/EditTextUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/EntityField.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/EntityField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/GridViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/GridViewUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_support_v4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/PopupWindowUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/PopupWindowUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/RemoteImageView.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/RemoteImageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makeapp-android.iml" afterPath="$PROJECT_DIR$/makeapp-android.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -34,251 +219,6 @@
     </list>
     <ignored path="makeapp-android.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/EditTextUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354691634478" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/service/IMService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354857606226" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/ChatActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354852555651" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/LoginActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354857789859" ignored="false" />
-    <file path="/IMService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354857458339" ignored="false" />
-    <file path="/PreferencesUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354857573252" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/PreferencesUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354857588319" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8743437519266799351tmp/AndroidManifest.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352965900047" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/SettingsActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352965883506" ignored="false" />
-    <file path="/SettingsActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352965882979" ignored="false" />
-    <file path="$PROJECT_DIR$/../makeapp-javase3.0/src/main/java/com/makeapp/javase/util/HashMapParameters.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352964061258" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/SettingNetActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788745481" ignored="false" />
-    <file path="/SettingNetActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788743911" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/ChatLogActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788705718" ignored="false" />
-    <file path="/ChatLogActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788702310" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/SettingPasswordActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788683954" ignored="false" />
-    <file path="/SettingPasswordActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788672784" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/file/core/ListFile.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788663035" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/GroupMembersActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354702035529" ignored="false" />
-    <file path="/GroupMembersActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354702013935" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/SysMsgActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788157781" ignored="false" />
-    <file path="/SysMsgActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788154536" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/NotificationUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352788114372" ignored="false" />
-    <file path="/ButtonUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352787654638" ignored="false" />
-    <file path="/fragment.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366789382527" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/TextViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352787269587" ignored="false" />
-    <file path="/TextViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366447174621" ignored="false" />
-    <file path="/Dummy.txt" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366789418507" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/storeshare/src/com/conversant/storeshare/activity/LoginActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352462380868" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/storeshare/res/layout/login_create.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352462222829" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/storeshare/res/layout/login.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352462222829" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/activity/AsyncTaskActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262742150" ignored="false" />
-    <file path="/AsyncTaskResponse.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352460477542" ignored="false" />
-    <file path="/AsyncTaskActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262684662" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/adapter/ArrayListAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366372645317" ignored="false" />
-    <file path="/ChatActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354852553708" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT.jar!/META-INF/persistence.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355458769228" ignored="false" />
-    <file path="/AndroidJPAApplication.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352109024602" ignored="false" />
-    <file path="/DialogUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465487641" ignored="false" />
-    <file path="/ContentResolverUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352108049118" ignored="false" />
-    <file path="/ImageViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363922202254" ignored="false" />
-    <file path="/AndroidEntityManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358928963954" ignored="false" />
-    <file path="/pom.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1362040647237" ignored="false" />
-    <file path="$PROJECT_DIR$/../mkaeapp-frameworks/.idea/workspace.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1349688413439" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/predicate/TruthValue.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1349688774958" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/krdavc/krdavc-audio2.0/.idea/workspace.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1349689076904" ignored="false" />
-    <file path="/a.dummy" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355298710643" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy4816898076947134382tmp/AndroidManifest.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351234066526" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/.idea/workspace.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351235320031" ignored="false" />
-    <file path="/ListItemAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351577177090" ignored="false" />
-    <file path="/CustomListAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351577503042" ignored="false" />
-    <file path="/JSONArrayAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351578540020" ignored="false" />
-    <file path="/PrivateShareOutListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351579157488" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/storeshare/src/com/conversant/storeshare/activity/PrivateShareOutListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351579158159" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/storeshare/.idea/workspace.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351579185399" ignored="false" />
-    <file path="/AsyncTaskParameters.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1351664462086" ignored="false" />
-    <file path="/IntentUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363925462306" ignored="false" />
-    <file path="/ArrayListAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366372597976" ignored="false" />
-    <file path="/ArrayAdapter.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352365571661" ignored="false" />
-    <file path="/AsyncTask.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366189560653" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/task/AsyncTask.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366189630166" ignored="false" />
-    <file path="$USER_HOME$/Downloads/Image/src/imageUtil/ImageUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1352535809415" ignored="false" />
-    <file path="/ViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366447152922" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366451329262" ignored="false" />
-    <file path="/LoginActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1361599142427" ignored="false" />
-    <file path="/AndroidEntityManagerFactory.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354410048896" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/jpa/AndroidEntityManagerFactory.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354410074223" ignored="false" />
-    <file path="/MainActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366872173166" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/MainActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1356321624742" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/TestCaseExecute.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354263015320" ignored="false" />
-    <file path="/TestCaseExecute.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262982004" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/TaskProgressActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354265683519" ignored="false" />
-    <file path="/TaskProgressActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354265680952" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/EventListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354257852376" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/res/values/strings.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355380526344" ignored="false" />
-    <file path="/strings.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366099447123" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/ExecuteTask.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261923265" ignored="false" />
-    <file path="/ExecuteTask.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262556897" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/IndoorActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261885224" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTask.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261882780" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/manager/TaskManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/TaskActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261885224" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/TaskAddActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366789868909" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/TestContext.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513023" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/view/TaskImportView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262204626" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/PhoneTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355464817086" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/persistence.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358929218672" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestExecutor.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261923264" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/PingActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/HttpWapActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/VoiceCallActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/PingTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513366" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/HttpTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513366" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/FtpTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513366" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/PDPActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/FTPActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/BusinessActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/AttachTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355130916803" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/AttachActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/PdpTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513366" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/testcase/TestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513366" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/manager/BusinessManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262514619" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestResult.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261939752" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTaskExecutorMap.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261974632" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTaskExeMap.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354261990121" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestMessage.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262028752" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/MyOverItem.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262029169" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/view/ImportParametersView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262029169" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestLogData.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262042724" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/manager/LogManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262059704" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestEventRecord.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262059159" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/util/FileUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262059704" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestConfig.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262092613" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTaskList.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262158047" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTaskItem.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354263015320" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262433459" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestTaskCaseMap.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262473415" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/entity/TestCaseEntity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354262513022" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/res/layout/menu_contact_group.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354410294103" ignored="false" />
-    <file path="/menu_contact_group.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354410290024" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/DialogUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465514359" ignored="false" />
-    <file path="/ImageButtonUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354604484810" ignored="false" />
-    <file path="/PopupWindowUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354604562135" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/PopupWindowUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354604588760" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/EditTextUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354691660154" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/testcases/FTPAddActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354691671161" ignored="false" />
-    <file path="/FTPAddActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354691154604" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/res/layout/main_top.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354702706283" ignored="false" />
-    <file path="/main_top.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354702704481" ignored="false" />
-    <file path="/TelephonyUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355130711775" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/TelephonyUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355130841707" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/TestApplication.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366371347690" ignored="false" />
-    <file path="/TestApplication.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366371347690" ignored="false" />
-    <file path="/PhoneTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354792883116" ignored="false" />
-    <file path="/ToastUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354792116915" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ToastUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354792158694" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/OutdoorActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354792216635" ignored="false" />
-    <file path="/OutdoorActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354792199644" ignored="false" />
-    <file path="/InputMethodUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354852369506" ignored="false" />
-    <file path="/ServiceUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354856314340" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/elink/elink-android-im/src/com/elink/im/activity/UserChatActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354856238316" ignored="false" />
-    <file path="/UserChatActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354856237685" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ServiceUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354856337319" ignored="false" />
-    <file path="/ExceptionServer.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1354876978023" ignored="false" />
-    <file path="/ActivityUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1361521143393" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ActivityUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355042288007" ignored="false" />
-    <file path="$PROJECT_DIR$/../../product/makeapp-vplayer/src/com/makeapp/vplayer/VideoPlayerActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355042918902" ignored="false" />
-    <file path="/VideoPlayerActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355042910733" ignored="false" />
-    <file path="$PROJECT_DIR$/../../product/makeapp-vplayer/src/com/makeapp/vplayer/file/FileManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355042510371" ignored="false" />
-    <file path="/FileManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355042506197" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/statistics.application.usages.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931374365" ignored="false" />
-    <file path="/PhoneListener.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355130657207" ignored="false" />
-    <file path="/AttachTestCase.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355130911640" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/feature.usage.statistics.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931291458" ignored="false" />
-    <file path="/AndroidUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1368693672395" ignored="false" />
-    <file path="/PackageUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355220596842" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/options.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1357630579127" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/view/ImportImageView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355224185673" ignored="false" />
-    <file path="/ImportImageView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355224162230" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/window.manager.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355300524447" ignored="false" />
-    <file path="/ResourcesUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1361599513845" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../qianzhi/project/qianzhi-project-src/c.d.united/Launcher/gen/com/cdu/launcher/BuildConfig.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355298707003" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../qianzhi/project/qianzhi-project-src/c.d.united/Launcher/gen/com/cdu/launcher/Manifest.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355298707003" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../qianzhi/project/qianzhi-project-src/c.d.united/Launcher/gen/com/cdu/launcher/R.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355298707003" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/krdavc/krdavc-video2.0/src/com/krdavc/video/recorder/VideoRecordActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355300385504" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/other.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931224805" ignored="false" />
-    <file path="$PROJECT_DIR$/../makeapp-javase3.0/src/main/java/com/makeapp/javase/file/FileUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355368158873" ignored="false" />
-    <file path="/FileUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355368156661" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/AndroidUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1368693705519" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/LogManageActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465365578" ignored="false" />
-    <file path="/CheckBoxUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355458293802" ignored="false" />
-    <file path="/CompoundButtonUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363922273419" ignored="false" />
-    <file path="/LogManageActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465362166" ignored="false" />
-    <file path="D:/develop/idea12/IntelliJIdea12/config/options/notifications.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931365323" ignored="false" />
-    <file path="$PROJECT_DIR$/../makeapp-ftpclient/pom.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355461868165" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/util/PhoneUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355464845075" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/service/TestService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465400439" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/StartActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465220258" ignored="false" />
-    <file path="/StartActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1355465205936" ignored="false" />
-    <file path="$PROJECT_DIR$/../makeapp-admin/src/main/webapp/mobile/modules/module/module_children.xhtml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1356588056138" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/jpa/AndroidEntityManager.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366786260343" ignored="false" />
-    <file path="/persistence.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358929218672" ignored="false" />
-    <file path="$PROJECT_DIR$/../makeapp-javase3.0/src/main/java/com/makeapp/javase/jpa/EntityManagerUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358929836263" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-javase/3.0-SNAPSHOT/makeapp-javase-3.0-SNAPSHOT-sources.jar!/com/makeapp/javase/jpa/EntityManagerUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358929862579" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-javase/3.0-SNAPSHOT/makeapp-javase-3.0-SNAPSHOT-sources.jar!/com/makeapp/javase/code/EntityDesc.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358929862579" ignored="false" />
-    <file path="/AndroidQuery.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358930543542" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/jpa/AndroidQuery.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358930665799" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/jpa/criteria/QueryStructure.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931246159" ignored="false" />
-    <file path="$PROJECT_DIR$/target/surefire-reports/TEST-qianzhi.android.ksoap.HelloTest.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931332500" ignored="false" />
-    <file path="/RootImpl.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1358931281121" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/service/ContactService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969485478" ignored="false" />
-    <file path="/ContactService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969310939" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/service/ContactOperation.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359968905846" ignored="false" />
-    <file path="/ContactOperation.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359968599471" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/service/NetService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969523553" ignored="false" />
-    <file path="/NetService.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359968657531" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/ContextCallback.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969523553" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/RestoreCallback.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969523553" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/conversant/sources/SingTel.StoreShare-Android/src/com/conversant/storeshare/contactbackup/DialogCallback.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1359969523553" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-user/src/main/java/com/makeapp/android/user/LoginActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1361599167602" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-user/res/values/config.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366098773311" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ResourcesUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1361599571304" ignored="false" />
-    <file path="/RemoteImageView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1362043525985" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/fragment/CheckingHistoryFragment.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363767291239" ignored="false" />
-    <file path="/CheckingHistoryFragment.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363767289708" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/activity/CheckingSignActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524819000" ignored="false" />
-    <file path="/CheckingSignActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524814770" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/fragment/HistoryFragment.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524390289" ignored="false" />
-    <file path="/HistoryFragment.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524386077" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/activity/CheckingMainActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698361530" ignored="false" />
-    <file path="/CheckingMainActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363922474856" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/IntentUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363925484851" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/res/layout/list_item.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363930517830" ignored="false" />
-    <file path="/list_item.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1363930513459" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ImageDownloader.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364523922986" ignored="false" />
-    <file path="/ImageDownloader.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364523827314" ignored="false" />
-    <file path="/ContentUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364274500193" ignored="false" />
-    <file path="/ContactUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364274402512" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/AndroidManifest.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366706536056" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/res/layout/activity_checking_sign.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364275084563" ignored="false" />
-    <file path="/activity_checking_sign.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364275084563" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/res/values/colors.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364275223791" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/CheckingApplication.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698163697" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/src/main/java/com/makeapp/android/checking/view/MyOverItem.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524737363" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/res/values-zh-rCN/strings.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524888928" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/res/values/strings.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366099447123" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/gen/com/makeapp/android/checking/R.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1364524950421" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/view/CellParamsListView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366372650834" ignored="false" />
-    <file path="/CellParamsListView.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366372650361" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/res/layout/listview_cell2.xml" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366371483296" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/TestingEventListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366447588264" ignored="false" />
-    <file path="/TestingEventListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366447579278" ignored="false" />
-    <file path="/ListViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366451652738" ignored="false" />
-    <file path="$MAVEN_REPOSITORY$/com/makeapp/makeapp-android/3.0-SNAPSHOT/makeapp-android-3.0-SNAPSHOT-sources.jar!/com/makeapp/android/util/ListViewUtil.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366451716868" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/TestingPlanStatusListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366451697906" ignored="false" />
-    <file path="/TestingPlanStatusListActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366451688591" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/assets/oauth2.properties" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698016008" ignored="false" />
-    <file path="/ExitApplication.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698289774" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-user/src/main/java/com/makeapp/android/user/SettingActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698333589" ignored="false" />
-    <file path="/SettingActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698333589" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-user/src/main/java/com/makeapp/android/user/LogoutActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698389905" ignored="false" />
-    <file path="/LogoutActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366698384903" ignored="false" />
-    <file path="$PROJECT_DIR$/../../android/makeapp-android-checking/gen/com/makeapp/android/checking/BuildConfig.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366706558266" ignored="false" />
-    <file path="/TaskAddActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366789854748" ignored="false" />
-    <file path="$PROJECT_DIR$/../../project/aotang/aotang-m1/src/com/aotang/test/activity/MainActivity.java" changelist="8126bf09-cf81-4376-8c60-24381de86d60" time="1366872182860" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,23 +276,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" line="155" class="com.makeapp.android.jpa.AndroidEntityManager" package="com.makeapp.android.jpa">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -390,6 +313,68 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" line="198" class="com.makeapp.android.jpa.AndroidEntityManager" package="com.makeapp.android.jpa">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" line="41" class="com.makeapp.android.util.BitmapUtil" package="com.makeapp.android.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="89" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="100" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -404,92 +389,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViewUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="3104" selection-end="3104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextViewUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="9" selection-start="1578" selection-end="1580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExitApplication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ExitApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="9" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ActivityUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AndroidUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="315" column="22" selection-start="11280" selection-end="11280" vertical-scroll-proportion="0.0">
+            <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="4066" max-vertical-offset="8873">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="IntentUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="16" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.9579832">
+            <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidQuery.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java">
+      <file leaf-file-name="MimeTypeMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+            <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logger.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/makeapp/makeapp-javase/3.0-SNAPSHOT/makeapp-javase-3.0-SNAPSHOT-sources.jar!/com/makeapp/javase/log/Logger.java">
+      <file leaf-file-name="GifView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="30" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0">
+            <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="7866">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidEntityManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java">
+      <file leaf-file-name="GifAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="21" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+            <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListViewUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java">
+      <file leaf-file-name="GifDecoder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="75" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+            <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="17518" max-vertical-offset="19114">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="6498" max-vertical-offset="7486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioRecorder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="55" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.55050504" vertical-offset="561" max-vertical-offset="2071">
+              <folding>
+                <element signature="e#1202#2297#0" expanded="true" />
+                <element signature="e#2286#2287#0" expanded="true" />
+                <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="12562" max-vertical-offset="14212">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaRecorder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="-4.92" vertical-offset="2442" max-vertical-offset="7904">
+              <folding>
+                <element signature="class#AudioSource#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="class#VideoSource#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="class#OutputFormat#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="docComment;field#EAAC_PLUS#0;class#AudioEncoder#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="class#VideoEncoder#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="docComment;method#setAudioSamplingRate#0;class#MediaRecorder#0" expanded="true" />
+                <element signature="class#EventHandler#0;class#MediaRecorder#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -504,26 +501,32 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/RemoteImageView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/CompoundButtonUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContentUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/RadioGroupUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteThumbnailTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/MediaStoreUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioPlayer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ExitApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\develop\maven\apache-maven-3.0.4" />
+        <option name="userSettingsFile" value="D:\develop\maven\apache-maven-3.0.4\conf\settings-makeapp.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -584,10 +587,10 @@
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -609,29 +612,16 @@
               <option name="myItemId" value="makeapp-android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="makeapp-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="makeapp-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Revu" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.15" />
@@ -644,41 +634,61 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="4b4f1e77-9a69-4612-b415-30c84c4cf051">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="e28216be-441d-490e-9014-1b4bc6925493">
-        <serverdata />
-      </server>
-    </servers>
+  <component name="PsiViewer.ProjectComponent">
+    <option name="HIGHLIGHT" value="false" />
+    <option name="FILTER_WHITESPACE" value="false" />
+    <option name="SHOW_PROPERTIES" value="true" />
+    <option name="SPLIT_DIVIDER_POSITION" value="300" />
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.makeapp.android.util" />
       <recent name="com.makeapp.android.task" />
+      <recent name="com.makeapp.android.jpa" />
+      <recent name="com.makeapp.android.util" />
       <recent name="com.makeapp.android.adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\javax\persistence" />
+      <recent name="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa" />
       <recent name="D:\work\source\makeapp\module\makeapp-android\src\main\java\com\makeapp\android\view\gif" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
@@ -711,20 +721,20 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="GLUE" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -755,17 +765,23 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
       <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -802,6 +818,25 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
     <list size="0" />
@@ -859,111 +894,146 @@
       <updated>1349688403882</updated>
       <workItem from="1363766707270" duration="602000" />
       <workItem from="1363837675055" duration="373000" />
+      <workItem from="1376649720673" duration="69000" />
+      <workItem from="1376650876109" duration="24000" />
+      <workItem from="1376706590513" duration="15000" />
+      <workItem from="1376714493210" duration="93000" />
+      <workItem from="1376714856690" duration="667000" />
+      <workItem from="1376877641821" duration="86000" />
+      <workItem from="1376878105360" duration="211000" />
+      <workItem from="1376883187138" duration="52000" />
+      <workItem from="1377595707960" duration="314000" />
+      <workItem from="1377597296777" duration="1655000" />
+      <workItem from="1377606436390" duration="142000" />
+      <workItem from="1377672181468" duration="124000" />
+      <workItem from="1377673448292" duration="653000" />
+      <workItem from="1377831679836" duration="853000" />
+      <workItem from="1377834307784" duration="354000" />
+      <workItem from="1377929791530" duration="5217000" />
+      <workItem from="1377936143547" duration="3149000" />
+      <workItem from="1377939546005" duration="2688000" />
+      <workItem from="1378085666260" duration="6829000" />
+      <workItem from="1378092542930" duration="8305000" />
+      <workItem from="1378111080909" duration="4368000" />
+      <workItem from="1378179319542" duration="2843000" />
+      <workItem from="1378191431978" duration="1290000" />
+      <workItem from="1378198052416" duration="2585000" />
+      <workItem from="1378204839721" duration="1581000" />
+      <workItem from="1378207573786" duration="41000" />
+      <workItem from="1378259291290" duration="848000" />
+      <workItem from="1378271196282" duration="147000" />
+      <workItem from="1378272053878" duration="2247000" />
+      <workItem from="1378281846075" duration="3356000" />
+      <workItem from="1378286182831" duration="1248000" />
+      <workItem from="1378296572429" duration="130000" />
+      <workItem from="1378348471570" duration="729000" />
+      <workItem from="1378351446030" duration="2265000" />
+      <workItem from="1378354884346" duration="1197000" />
+      <workItem from="1378358596972" duration="1390000" />
+      <workItem from="1378380189351" duration="171000" />
+      <workItem from="1378380791378" duration="27000" />
+      <workItem from="1378381091622" duration="85000" />
+      <workItem from="1378449475676" duration="337000" />
+      <workItem from="1379386161468" duration="159000" />
+      <workItem from="1379471925509" duration="900000" />
+      <workItem from="1379473666184" duration="912000" />
+      <workItem from="1379474943407" duration="409000" />
+      <workItem from="1379485267537" duration="1048000" />
+      <workItem from="1379742666247" duration="75000" />
+      <workItem from="1379743796521" duration="81000" />
+      <workItem from="1379752615930" duration="1372000" />
+      <workItem from="1387349380158" duration="41000" />
+      <workItem from="1387349425994" duration="2665000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="975000" />
+    <option name="totallyTimeSpent" value="67022000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="reVu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TunnelliJ" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Compare Directories" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="ImagePreview&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707354" sideWeight="0.49756888" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29513344" sideWeight="0.68373984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707354" sideWeight="0.83225286" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17098865" sideWeight="0.6923077" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2463651" sideWeight="0.6923077" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28525123" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31502423" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28660437" sideWeight="0.8330632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Animations&#9;" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliGuard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliTail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TunnelliJ" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Compare Directories" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.7058347" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,105 +1047,281 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="373" selection-end="405" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContentUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="336" column="13" selection-start="11867" selection-end="11867" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/makeapp/makeapp-javase/3.0-SNAPSHOT/makeapp-javase-3.0-SNAPSHOT-sources.jar!/com/makeapp/javase/http/HttpUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="471" column="66" selection-start="16776" selection-end="16776" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="28" selection-start="2243" selection-end="2243" vertical-scroll-proportion="0.0">
+        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="3104" selection-end="3104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="9" selection-start="1578" selection-end="1580" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="75" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ExitApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="9" selection-start="1329" selection-end="1329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/makeapp/makeapp-javase/3.0-SNAPSHOT/makeapp-javase-3.0-SNAPSHOT-sources.jar!/com/makeapp/javase/log/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="30" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="21" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ActivityUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="315" column="22" selection-start="11280" selection-end="11280" vertical-scroll-proportion="0.0">
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="4066" max-vertical-offset="8873">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="16" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.9579832">
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="7866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="17518" max-vertical-offset="19114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="6498" max-vertical-offset="7486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="1976">
+          <folding>
+            <element signature="e#1202#2297#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7866">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="17518" max-vertical-offset="19114">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2204">
+          <folding>
+            <element signature="e#1202#2297#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="27" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="23237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="4" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="318" max-vertical-offset="2071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2466" column="74" selection-start="91752" selection-end="91779" vertical-scroll-proportion="0.0" vertical-offset="20628" max-vertical-offset="95760" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="14" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="665" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="54" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="2394" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/widget/ImageView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="332" column="16" selection-start="11375" selection-end="11375" vertical-scroll-proportion="0.0" vertical-offset="3851" max-vertical-offset="13984" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="6403">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="16595" max-vertical-offset="17537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="3817" max-vertical-offset="4237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="5184" max-vertical-offset="6555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2824" max-vertical-offset="3439">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="2964" max-vertical-offset="7733">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="1248" max-vertical-offset="8949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="6935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="12562" max-vertical-offset="14212">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="-4.92" vertical-offset="2442" max-vertical-offset="7904">
+          <folding>
+            <element signature="class#AudioSource#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="class#VideoSource#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="class#OutputFormat#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="docComment;field#EAAC_PLUS#0;class#AudioEncoder#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="class#VideoEncoder#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="docComment;method#setAudioSamplingRate#0;class#MediaRecorder#0" expanded="true" />
+            <element signature="class#EventHandler#0;class#MediaRecorder#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="55" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.55050504" vertical-offset="561" max-vertical-offset="2071">
+          <folding>
+            <element signature="e#1202#2297#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,7 +1354,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>xmlvm</last-edited>
+          <last-edited>cocos2d-x</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1120,7 +1366,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.6</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1137,6 +1383,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1156,7 +1403,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.google.android:android:2.3.1</last-edited>
+          <last-edited>Maven: com.google.android:android-support:v3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1167,6 +1414,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
   </component>
 </project>
 

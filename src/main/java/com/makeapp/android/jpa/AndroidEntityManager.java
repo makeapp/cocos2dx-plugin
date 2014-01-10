@@ -3,22 +3,19 @@
  */
 package com.makeapp.android.jpa;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteStatement;
-import com.makeapp.android.jpa.criteria.CriteriaBuilderImpl;
-import com.makeapp.android.jpa.criteria.CriteriaQueryCompiler;
-import com.makeapp.javase.log.Logger;
-import com.makeapp.javase.util.DataUtil;
-
-import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.metamodel.Metamodel;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteStatement;
+import com.makeapp.javase.log.Logger;
+import com.makeapp.javase.util.DataUtil;
 
 /**
  * @author <a href="mailto:yuanyou@shqianzhi.com">yuanyou</a>
@@ -58,6 +55,11 @@ public class AndroidEntityManager
     }
 
 
+    public EntityClass getEntityClass(String className)
+    {
+        return unitEntity.getEntityClass(className);
+    }
+
     public void persist(Object entity)
     {
         synchronized (writeLock) {
@@ -76,13 +78,54 @@ public class AndroidEntityManager
                 }
             }
             else {
-                logger.error("Invalid EntityClass "+entity.getClass().getName());
+                logger.error("Invalid EntityClass " + entity.getClass().getName());
             }
 //            }
 //            finally {
 //                close();
 //            }
         }
+    }
+
+    public EntityTransaction getTransaction()
+    {
+        final SQLiteDatabase db = openSQLiteDatabase(true);
+
+        return new EntityTransaction()
+        {
+            boolean rollbackOnly;
+
+            public void begin()
+            {
+                db.beginTransaction();
+            }
+
+            public void commit()
+            {
+                db.setTransactionSuccessful();
+                db.endTransaction();
+            }
+
+            public void rollback()
+            {
+                db.endTransaction();
+            }
+
+            public void setRollbackOnly()
+            {
+                rollbackOnly = true;
+            }
+
+            public boolean getRollbackOnly()
+            {
+                return rollbackOnly;
+            }
+
+            public boolean isActive()
+            {
+                return false;
+            }
+        };
     }
 
     private void executeInsert(SQLiteDatabase db, Object entity, EntityClass entityClass)
@@ -158,7 +201,7 @@ public class AndroidEntityManager
         if (keyField != null) {
             keyField.setSetMethodValue(entity, result);
         }
-        logger.info("insert result "+result);
+        logger.info("insert result " + result);
     }
 
     private void executeUpdate(SQLiteDatabase db, Object entity, EntityClass entityClass, Object id)
@@ -234,7 +277,7 @@ public class AndroidEntityManager
 
         long result = ps.executeInsert();
 
-        logger.info("update result "+result);
+        logger.info("update result " + result);
     }
 
 
@@ -292,32 +335,32 @@ public class AndroidEntityManager
         SQLiteDatabase db = openSQLiteDatabase(true);
 
 //        try {
-            EntityClass entityClass = unitEntity.getEntityClass(clazz.getName());
-            if (entityClass != null) {
-                EntityField field = entityClass.getPrimaryKeyField();
-                if (field != null) {
-                    StringBuffer sqlBuf = new StringBuffer();
-                    sqlBuf.append("select * from ").append(entityClass.getTableName());
-                    sqlBuf.append(" where ").append(field.getColumeName()).append("=");
+        EntityClass entityClass = unitEntity.getEntityClass(clazz.getName());
+        if (entityClass != null) {
+            EntityField field = entityClass.getPrimaryKeyField();
+            if (field != null) {
+                StringBuffer sqlBuf = new StringBuffer();
+                sqlBuf.append("select * from ").append(entityClass.getTableName());
+                sqlBuf.append(" where ").append(field.getColumeName()).append("=");
 
-                    if (field.getDataType().equals(SqlDataType.Varchar)) {
-                        sqlBuf.append("'").append(primaryKey).append("'");
-                    }
-                    else if (field.getDataType().equals(SqlDataType.Integer)) {
-                        sqlBuf.append(primaryKey);
-                    }
-                    logger.info(sqlBuf.toString());
-                    Cursor cursor = db.rawQuery(sqlBuf.toString(), null);
-                    try {
-                        if (cursor.moveToFirst() && cursor.getCount() > 0) {
-                            return getEntity(clazz, cursor);
-                        }
-                    }
-                    finally {
-                        cursor.close();
+                if (field.getDataType().equals(SqlDataType.Varchar)) {
+                    sqlBuf.append("'").append(primaryKey).append("'");
+                }
+                else if (field.getDataType().equals(SqlDataType.Integer)) {
+                    sqlBuf.append(primaryKey);
+                }
+                logger.info(sqlBuf.toString());
+                Cursor cursor = db.rawQuery(sqlBuf.toString(), null);
+                try {
+                    if (cursor.moveToFirst() && cursor.getCount() > 0) {
+                        return getEntity(clazz, cursor);
                     }
                 }
+                finally {
+                    cursor.close();
+                }
             }
+        }
 //        }
 //        finally {
 //            close();
@@ -396,16 +439,16 @@ public class AndroidEntityManager
     {
         return find(entityClass, primaryKey);
     }
-
-    public <T> T find(Class<T> entityClass, Object primaryKey, LockModeType lockMode)
-    {
-        return find(entityClass, primaryKey);
-    }
-
-    public <T> T find(Class<T> entityClass, Object primaryKey, LockModeType lockMode, Map<String, Object> properties)
-    {
-        return find(entityClass, primaryKey);
-    }
+//
+//    public <T> T find(Class<T> entityClass, Object primaryKey, LockModeType lockMode)
+//    {
+//        return find(entityClass, primaryKey);
+//    }
+//
+//    public <T> T find(Class<T> entityClass, Object primaryKey, LockModeType lockMode, Map<String, Object> properties)
+//    {
+//        return find(entityClass, primaryKey);
+//    }
 
     public <T> T getReference(Class<T> clazz, Object primaryKey)
     {
@@ -434,25 +477,6 @@ public class AndroidEntityManager
 
     }
 
-    public void setFlushMode(FlushModeType flushMode)
-    {
-
-    }
-
-    public FlushModeType getFlushMode()
-    {
-        return null;
-    }
-
-    public void lock(Object entity, LockModeType lockMode)
-    {
-
-    }
-
-    public void lock(Object entity, LockModeType lockMode, Map<String, Object> properties)
-    {
-
-    }
 
     public void refresh(Object entity)
     {
@@ -464,15 +488,6 @@ public class AndroidEntityManager
 
     }
 
-    public void refresh(Object entity, LockModeType lockMode)
-    {
-
-    }
-
-    public void refresh(Object entity, LockModeType lockMode, Map<String, Object> properties)
-    {
-
-    }
 
     public void clear()
     {
@@ -489,33 +504,33 @@ public class AndroidEntityManager
         SQLiteDatabase db = openSQLiteDatabase(true);
 
 //        try {
-            EntityClass entityClass = unitEntity.getEntityClass(entity.getClass().getName());
-            if (entityClass != null) {
-                EntityField field = entityClass.getPrimaryKeyField();
-                if (field != null) {
-                    Object primaryKey = field.getGetMethodValue(entity);
-                    StringBuffer sqlBuf = new StringBuffer();
-                    sqlBuf.append("select count(*) from ").append(entityClass.getTableName());
-                    sqlBuf.append(" where ").append(field.getColumeName()).append("=");
+        EntityClass entityClass = unitEntity.getEntityClass(entity.getClass().getName());
+        if (entityClass != null) {
+            EntityField field = entityClass.getPrimaryKeyField();
+            if (field != null) {
+                Object primaryKey = field.getGetMethodValue(entity);
+                StringBuffer sqlBuf = new StringBuffer();
+                sqlBuf.append("select count(*) from ").append(entityClass.getTableName());
+                sqlBuf.append(" where ").append(field.getColumeName()).append("=");
 
-                    if (field.getDataType().equals(SqlDataType.Varchar)) {
-                        sqlBuf.append("'").append(primaryKey).append("'");
-                    }
-                    else if (field.getDataType().equals(SqlDataType.Integer)) {
-                        sqlBuf.append(primaryKey);
-                    }
-                    logger.info(sqlBuf.toString());
-                    Cursor cursor = db.rawQuery(sqlBuf.toString(), null);
-                    try {
-                        if (cursor.moveToFirst() && cursor.getCount() > 0) {
-                            return cursor.getInt(1) > 0;
-                        }
-                    }
-                    finally {
-                        cursor.close();
+                if (field.getDataType().equals(SqlDataType.Varchar)) {
+                    sqlBuf.append("'").append(primaryKey).append("'");
+                }
+                else if (field.getDataType().equals(SqlDataType.Integer)) {
+                    sqlBuf.append(primaryKey);
+                }
+                logger.info(sqlBuf.toString());
+                Cursor cursor = db.rawQuery(sqlBuf.toString(), null);
+                try {
+                    if (cursor.moveToFirst() && cursor.getCount() > 0) {
+                        return cursor.getInt(1) > 0;
                     }
                 }
+                finally {
+                    cursor.close();
+                }
             }
+        }
 //        }
 //        finally {
 //            close();
@@ -523,10 +538,6 @@ public class AndroidEntityManager
         return false;
     }
 
-    public LockModeType getLockMode(Object entity)
-    {
-        return null;
-    }
 
     public void setProperty(String propertyName, Object value)
     {
@@ -543,26 +554,26 @@ public class AndroidEntityManager
         return new AndroidQuery(this, qlString, null);
     }
 
-    public <T> TypedQuery<T> createQuery(CriteriaQuery<T> criteriaQuery)
-    {
-        CriteriaQueryCompiler compiler = new CriteriaQueryCompiler(this);
-        return compiler.compile(criteriaQuery);
-    }
-
-    public <T> TypedQuery<T> createQuery(String qlString, Class<T> resultClass)
-    {
-        return new AndroidQuery<T>(this, qlString, resultClass);
-    }
+//    public <T> TypedQuery<T> createQuery(CriteriaQuery<T> criteriaQuery)
+//    {
+//        CriteriaQueryCompiler compiler = new CriteriaQueryCompiler(this);
+//        return compiler.compile(criteriaQuery);
+//    }
+//
+//    public <T> TypedQuery<T> createQuery(String qlString, Class<T> resultClass)
+//    {
+//        return new AndroidQuery<T>(this, qlString, resultClass);
+//    }
 
     public Query createNamedQuery(String name)
     {
         return null;
     }
 
-    public <T> TypedQuery<T> createNamedQuery(String name, Class<T> resultClass)
-    {
-        return null;
-    }
+//    public <T> TypedQuery<T> createNamedQuery(String name, Class<T> resultClass)
+//    {
+//        return null;
+//    }
 
     public Query createNativeQuery(String sqlString)
     {
@@ -609,30 +620,38 @@ public class AndroidEntityManager
         return sqlitedb1.isOpen();
     }
 
-    public EntityTransaction getTransaction()
-    {
-        return null;
-    }
-
-    public EntityManagerFactory getEntityManagerFactory()
-    {
-        return androidEntityManagerFactory;
-    }
-
-    public CriteriaBuilder getCriteriaBuilder()
-    {
-        return new CriteriaBuilderImpl(androidEntityManagerFactory);
-    }
-
-    public Metamodel getMetamodel()
-    {
-        return null;
-    }
+//    public EntityTransaction getTransaction()
+//    {
+//        return null;
+//    }
+//
+//    public EntityManagerFactory getEntityManagerFactory()
+//    {
+//        return androidEntityManagerFactory;
+//    }
+//
+//    public CriteriaBuilder getCriteriaBuilder()
+//    {
+//        return new CriteriaBuilderImpl(androidEntityManagerFactory);
+//    }
+//
+//    public Metamodel getMetamodel()
+//    {
+//        return null;
+//    }
 
     public Cursor rawQuery(String sql, String[] bindValues)
     {
-        SQLiteDatabase db = openSQLiteDatabase(true);
-        logger.info(sql);
+        SQLiteDatabase db = openSQLiteDatabase(false);
         return db.rawQuery(sql, bindValues);
+    }
+
+    public int executeUpdate(String sql, String[] bindvalues)
+    {
+        logger.info(sql);
+
+        SQLiteDatabase db = openSQLiteDatabase(false);
+         db.execSQL(sql,bindvalues);
+        return 0;
     }
 }

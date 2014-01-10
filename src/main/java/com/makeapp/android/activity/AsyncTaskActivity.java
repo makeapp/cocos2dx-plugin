@@ -88,6 +88,11 @@ public class AsyncTaskActivity<P, R> extends Activity
 
     }
 
+    protected void onException(Throwable e)
+    {
+
+    }
+
     protected void onTaskProgressUpdate(Integer... values)
     {
 
@@ -207,6 +212,13 @@ public class AsyncTaskActivity<P, R> extends Activity
         {
             super.onCancelled();
             AsyncTaskActivity.this.onTaskCancelled();
+        }
+
+
+        protected void onException(Throwable throwable)
+        {
+            super.onException(throwable);
+            AsyncTaskActivity.this.onException(throwable);
         }
 
         @Override

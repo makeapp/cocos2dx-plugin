@@ -15,21 +15,23 @@ import android.widget.ListView;
  */
 public class ListViewUtil
 {
-    public static void notifyDataSetChanged(Object activity, int listViewId)
+    public static ListAdapter notifyDataSetChanged(Object activity, int listViewId)
     {
         ListAdapter adapter1 = ListViewUtil.getAdapter(activity, listViewId);
         if (adapter1 instanceof BaseAdapter) {
             BaseAdapter baseAdapter = (BaseAdapter) adapter1;
             baseAdapter.notifyDataSetChanged();
         }
+        return adapter1;
     }
 
-    public static void setAdapter(Object activity, int listViewId, ListAdapter adapter)
+    public static ListView setAdapter(Object activity, int listViewId, ListAdapter adapter)
     {
         ListView listView = (ListView) ViewUtil.findViewById(activity, listViewId);
         if (listView != null) {
             listView.setAdapter(adapter);
         }
+        return listView;
     }
 
 
@@ -43,11 +45,12 @@ public class ListViewUtil
     }
 
 
-    public static void setOnItemSelectedListener(Object view, int listViewId, AdapterView.OnItemSelectedListener listener)
+    public static ListView setOnItemSelectedListener(Object view, int listViewId, AdapterView.OnItemSelectedListener listener)
     {
         ListView listView = (ListView) ViewUtil.findViewById(view, listViewId);
         if (listView != null) {
             listView.setOnItemSelectedListener(listener);
         }
+        return listView;
     }
 }

@@ -207,6 +207,11 @@ public class GifView extends ImageView implements GifAction
             gifDecoder.free();
     }
 
+    public void stop()
+    {
+        isRun = false;
+    }
+
     /**
      * 只显示第一帧图片<br>
      * 调用本方法后，gif不会显示动画，只会显示gif的第一帧图
@@ -231,6 +236,16 @@ public class GifView extends ImageView implements GifAction
         }
     }
 
+    protected void onAttachedToWindow()
+    {
+        super.onAttachedToWindow();
+    }
+
+    protected void onDetachedFromWindow()
+    {
+        super.onDetachedFromWindow();
+    }
+
     /**
      * 设置gif在解码过程中的显示方式<br>
      * <strong>本方法只能在setGifImage方法之前设置，否则设置无效</strong>
@@ -242,6 +257,8 @@ public class GifView extends ImageView implements GifAction
         if (gifDecoder == null)
             animationType = type;
     }
+
+
 
 
     /**

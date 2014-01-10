@@ -6,15 +6,20 @@ package com.makeapp.android.util;
 import java.io.File;
 import java.io.IOException;
 
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.webkit.MimeTypeMap;
 import com.makeapp.android.task.AsyncTask;
 import com.makeapp.javase.file.FileUtil;
 import com.makeapp.javase.http.URLUtil;
 import com.makeapp.javase.lang.StringUtil;
+import com.makeapp.javase.util.crypto.Base64;
 
 /**
  * @author <a href="mailto:yuanyou@shqianzhi.com">yuanyou</a>
@@ -35,6 +40,9 @@ public class IntentUtil
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Uri uri = Uri.fromFile(new File(filePath));
         String extName = FileUtil.getExtFromName(filePath);
+        if(StringUtil.isValid(extName)){
+            extName = extName.toLowerCase();
+        }
         String mimeType = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extName);
         intent.setDataAndType(uri, mimeType);
         return intent;
@@ -42,7 +50,12 @@ public class IntentUtil
 
     public static void startViewFile(Context context, String filePath)
     {
-        context.startActivity(createViewFile(filePath));
+        try {
+            context.startActivity(createViewFile(filePath));
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void startViewUrl(final Context context, final String fileUrl, boolean neeDialog)
@@ -64,8 +77,8 @@ public class IntentUtil
             {
                 String extName = FileUtil.getExtFromName(fileUrl);
 
-                File tmpFile = AndroidUtil.getApplicationExternalStorage(context, "cache");
-                tmpFile = new File(tmpFile, com.makeapp.javase.util.crypto.Base64.encodeToString(fileUrl) + "." + extName);
+                File tmpFile = AndroidUtil.getApplicationImageDir(context);
+                tmpFile = new File(tmpFile, Base64.encodeToString(fileUrl) + "." + extName);
                 if (!tmpFile.exists()) {
                     try {
                         URLUtil.saveContent(fileUrl, tmpFile);
@@ -268,6 +281,113 @@ public class IntentUtil
         Uri uri = Uri.parse(url);
         return new Intent(Intent.ACTION_VIEW, uri);
     }
+
+    public static Intent getPictureFile(Activity context, int reqCode)
+    {
+        try {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
+            intent.setType("image/*");
+            intent.putExtra("return-path", true);
+            context.startActivityForResult(intent, reqCode);
+            return intent;
+        }
+        catch (ActivityNotFoundException e) {
+        }
+        return null;
+    }
+
+    public static Intent takeCameraPicture(Activity context, int reqCode)
+    {
+        try {
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            intent.putExtra("return-path", true);
+            context.startActivityForResult(intent, reqCode);
+            return intent;
+        }
+        catch (ActivityNotFoundException e) {
+        }
+        return null;
+    }
+
+    public static Intent cropCameraPicture(Activity context, int reqCode, int witdh, int height)
+    {
+        try {
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            intent.putExtra("return-path", true);
+            intent.putExtra("crop", "true");
+            intent.putExtra("aspectX", 1);
+            intent.putExtra("aspectY", 1);
+            intent.putExtra("outputX", witdh);
+            intent.putExtra("outputY", height);
+            intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+            intent.putExtra("noFaceDetection", false); // no face detection
+            context.startActivityForResult(intent, reqCode);
+            return intent;
+        }
+        catch (ActivityNotFoundException e) {
+        }
+        return null;
+    }
+
+    public static Intent takeCameraVideo(Activity context, int reqCode)
+    {
+        try {
+            Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+            intent.putExtra("return-path", true);
+            context.startActivityForResult(intent, reqCode);
+            return intent;
+        }
+        catch (ActivityNotFoundException e) {
+        }
+        return null;
+    }
+
+    public static Intent cropPictureFile(Activity context, int reqCode, int witdh, int height)
+    {
+        try {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT, null);
+            intent.setType("image/*");
+            intent.putExtra("crop", "true");
+            intent.putExtra("aspectX", 1);
+            intent.putExtra("aspectY", 1);
+            intent.putExtra("outputX", witdh);
+            intent.putExtra("outputY", height);
+            intent.putExtra("return-data", true);
+            intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+            intent.putExtra("noFaceDetection", false);
+//            intent.putExtra("return-path", true);
+            context.startActivityForResult(intent, reqCode);
+            return intent;
+        }
+        catch (ActivityNotFoundException e) {
+        }
+        return null;
+    }
+
+    public static Intent cropPicture(Activity context, Uri uri, int outputX, int outputY, int requestCode, boolean faceDetection)
+    {
+//        Intent intent = new Intent("com.android.msg_share_camera.action.CROP");
+        Intent intent = new Intent("com.android.camera.action.CROP");
+        intent.setDataAndType(uri, "image/*");
+        intent.putExtra("crop", "true");
+        intent.putExtra("aspectX", 2);
+        intent.putExtra("aspectY", 2);
+        intent.putExtra("outputX", outputX);
+        intent.putExtra("outputY", outputY);
+        intent.putExtra("scale", true);
+        intent.putExtra("return-data", true);
+        intent.putExtra("outputFormat", Bitmap.CompressFormat.JPEG.toString());
+        intent.putExtra("noFaceDetection", !faceDetection); // no face detection
+        try {
+            context.startActivityForResult(intent, requestCode);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return intent;
+    }
+
 
     public static void startBrowser(Context context, String url)
     {

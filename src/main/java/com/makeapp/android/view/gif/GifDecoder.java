@@ -229,7 +229,6 @@ public class GifDecoder extends Thread
             File file = new File(path);
             if (!file.exists()) {
                 ret = file.mkdirs();
-
             }
             else
                 ret = true;
@@ -249,7 +248,7 @@ public class GifDecoder extends Thread
             image.compress(Bitmap.CompressFormat.PNG, 100, fos);
         }
         catch (Exception ex) {
-
+            ex.printStackTrace();
         }
     }
 

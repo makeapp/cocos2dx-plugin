@@ -1,20 +1,17 @@
 package com.makeapp.android.view;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import com.makeapp.android.task.AsyncTask;
 
 /**
  * Created by IntelliJ IDEA.
  * User: yuanyou
  * Date: 11-8-11
- * Time: ÏÂÎç4:59
+ * Time: ï¿½ï¿½ï¿½ï¿½4:59
  */
 public class RemoteImageView extends ImageView
 {
-
     public RemoteImageView(Context context)
     {
         super(context);
@@ -30,16 +27,31 @@ public class RemoteImageView extends ImageView
         super(context, attrs, defStyle);
     }
 
-    public void load(String url)
+    public void loadImage(String url)
     {
-
+//        ImageDownTask task = new ImageDownTask()
+//        {
+//            protected void onPostExecute(String s)
+//            {
+//                if (getBitmap() != null) {
+//                    setImageBitmap(getBitmap());
+//                }
+//            }
+//        };
+//        task.execute(url);
     }
 
-    class ImageDownloadTask extends AsyncTask<String, Integer, Bitmap>
+    public void loadThumbnail(String url)
     {
-        protected Bitmap doInBackground(String... params)
-        {
-            return null;
-        }
+//        ThumbnailDownTask task = new ThumbnailDownTask()
+//        {
+//            protected void onPostExecute(String s)
+//            {
+//                if (getBitmap() != null) {
+//                    setImageBitmap(getBitmap());
+//                }
+//            }
+//        };
+//        task.execute(url);
     }
 }

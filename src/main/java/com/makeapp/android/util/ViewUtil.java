@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -78,38 +79,41 @@ public class ViewUtil
      * @param id
      * @param visibility
      */
-    public static void setChildVisibility(View view, int id, int visibility)
+    public static View setChildVisibility(View view, int id, int visibility)
     {
         View v = findViewById(view, id);
         if (v != null) {
             v.setVisibility(visibility);
         }
+        return v;
     }
 
-    public static void setViewBackgroundResource(Object contrainer, int id, int resId)
+    public static View setViewBackgroundResource(Object contrainer, int id, int resId)
     {
         View v = findViewById(contrainer, id);
         if (v != null) {
             v.setBackgroundResource(resId);
         }
+        return v;
     }
 
-    public static void setViewBackgroundResource(Object contrainer, int id, Drawable resId)
+    public static View setViewBackgroundResource(Object contrainer, int id, Drawable resId)
     {
         View v = findViewById(contrainer, id);
         if (v != null) {
             v.setBackgroundDrawable(resId);
         }
+        return v;
     }
 
-    public static void setViewBackgroundColor(Object contrainer, int id, int resId)
+    public static View setViewBackgroundColor(Object contrainer, int id, int resId)
     {
         View v = findViewById(contrainer, id);
         if (v != null) {
             v.setBackgroundColor(resId);
         }
+        return v;
     }
-
 
 
     /**
@@ -119,75 +123,89 @@ public class ViewUtil
      * @param id
      * @param visibility
      */
-    public static void setViewVisibility(Object view, int id, int visibility)
+    public static View setViewVisibility(Object view, int id, int visibility)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setVisibility(visibility);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewOnClickListener(Object view, int id, View.OnClickListener listener)
+    public static View setViewOnClickListener(Object view, int id, View.OnClickListener listener)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setOnClickListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewOnFocusChangeListener(Object view, int id, View.OnFocusChangeListener listener)
+    public static View setViewOnFocusChangeListener(Object view, int id, View.OnFocusChangeListener listener)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setOnFocusChangeListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewOnKeyListener(Object activity, int id, View.OnKeyListener listener)
+    public static View setViewOnKeyListener(Object activity, int id, View.OnKeyListener listener)
     {
         if (activity != null) {
             View v = findViewById(activity, id);
             if (v != null) {
                 v.setOnKeyListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewOnTouchListener(Object view, int id, View.OnTouchListener listener)
+    public static View setViewOnTouchListener(Object view, int id, View.OnTouchListener listener)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setOnTouchListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
 
-    public static void setViewOnLongClickListener(Object activity, int id, View.OnLongClickListener listener)
+    public static View setViewOnLongClickListener(Object activity, int id, View.OnLongClickListener listener)
     {
         if (activity != null) {
             View v = findViewById(activity, id);
             if (v != null) {
                 v.setOnLongClickListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewOnCreateContextMenuListener(Object view, int id, View.OnCreateContextMenuListener listener)
+    public static View setViewOnCreateContextMenuListener(Object view, int id, View.OnCreateContextMenuListener listener)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setOnCreateContextMenuListener(listener);
             }
+            return v;
         }
+        return null;
     }
 
     /**
@@ -197,54 +215,90 @@ public class ViewUtil
      * @param id
      * @param selected
      */
-    public static void setViewSelected(Object view, int id, boolean selected)
+    public static View setViewSelected(Object view, int id, boolean selected)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setSelected(selected);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewEnabled(Object view, int id, boolean enabled)
+    public static View toggleViewVisibility(Object view, int id)
+    {
+        if (view != null) {
+            View v = findViewById(view, id);
+            if (v != null) {
+                int vi = v.getVisibility();
+                v.setVisibility(vi == View.VISIBLE ? View.INVISIBLE : View.VISIBLE);
+            }
+            return v;
+        }
+        return null;
+    }
+
+    public static View toggleViewGone(Object view, int id)
+    {
+        if (view != null) {
+            View v = findViewById(view, id);
+            if (v != null) {
+                int vi = v.getVisibility();
+                v.setVisibility(vi == View.VISIBLE ? View.GONE : View.VISIBLE);
+            }
+            return v;
+        }
+        return null;
+    }
+
+    public static View setViewEnabled(Object view, int id, boolean enabled)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setEnabled(enabled);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewPressed(Object view, int id, boolean pressed)
+    public static View setViewPressed(Object view, int id, boolean pressed)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setPressed(pressed);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewAnimation(Object view, int id, Animation animation)
+    public static View setViewAnimation(Object view, int id, Animation animation)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setAnimation(animation);
             }
+            return v;
         }
+        return null;
     }
 
-    public static void setViewFocusable(Object view, int id, boolean selected)
+    public static View setViewFocusable(Object view, int id, boolean selected)
     {
         if (view != null) {
             View v = findViewById(view, id);
             if (v != null) {
                 v.setFocusable(selected);
             }
+            return v;
         }
+        return null;
     }
 
     public static Bitmap saveView(View view, String fileName)
@@ -264,6 +318,71 @@ public class ViewUtil
             view.destroyDrawingCache();
         }
         return b1;
+    }
+
+
+    public static View startBackgroundAnimationDrawable(Object view, int imgId)
+    {
+        View imageView = ViewUtil.findViewById(view, imgId);
+        if (imageView == null) {
+            return null;
+        }
+        if (imageView.getBackground() instanceof AnimationDrawable) {
+            ((AnimationDrawable) imageView.getBackground()).start();
+        }
+
+        return imageView;
+    }
+
+    public static View startBackgroundAnimationDrawable(Object view, int imgId,int resId)
+    {
+        View imageView = ViewUtil.findViewById(view, imgId);
+        if (imageView == null) {
+            return null;
+        }
+        imageView.setBackgroundResource(resId);
+        if (imageView.getBackground() instanceof AnimationDrawable) {
+            ((AnimationDrawable) imageView.getBackground()).start();
+        }
+
+        return imageView;
+    }
+
+    public static View startBackgroundAnimationDrawable(View imageView)
+    {
+        if (imageView == null) {
+            return null;
+        }
+        if (imageView.getBackground() instanceof AnimationDrawable) {
+            ((AnimationDrawable) imageView.getBackground()).start();
+        }
+
+        return imageView;
+    }
+
+    public static View stopBackgroundAnimationDrawable(View imageView)
+    {
+        if (imageView == null) {
+            return null;
+        }
+        if (imageView.getBackground() instanceof AnimationDrawable) {
+            ((AnimationDrawable) imageView.getBackground()).stop();
+        }
+
+        return imageView;
+    }
+
+    public static View stopBackgroundAnimationDrawable(Object view, int imgId)
+    {
+        View imageView = (View) ViewUtil.findViewById(view, imgId);
+        if (imageView == null) {
+            return null;
+        }
+        if (imageView.getBackground() instanceof AnimationDrawable) {
+            ((AnimationDrawable) imageView.getBackground()).stop();
+        }
+
+        return imageView;
     }
 
 }

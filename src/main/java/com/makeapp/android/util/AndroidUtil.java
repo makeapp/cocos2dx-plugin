@@ -6,6 +6,7 @@ package com.makeapp.android.util;
 import java.io.File;
 import java.lang.reflect.Field;
 
+import android.app.Activity;
 import android.app.ActivityManagerNative;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -18,6 +19,8 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.RemoteException;
 import android.os.StatFs;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import com.makeapp.javase.file.FileUtil;
 import com.makeapp.javase.http.HttpException;
 import com.makeapp.javase.http.HttpUtil;
@@ -53,7 +56,7 @@ public class AndroidUtil
             String content = HttpUtil.getHttpClient(url).getText(url);
             if (StringUtil.isValid(content)) {
                 int pos1 = 0;
-                if ((pos1 = url.indexOf("/restapi/object/application")) > 0) {
+                if ((pos1 = url.indexOf("/restapi/application")) > 0) {
                     JSONObject jsonObject = new JSONObject(content);
                     int thisVersionCode = PackageUtil.getPackageVersionCode(context);
                     int versionCode = jsonObject.optInt("versionCode");
@@ -103,7 +106,7 @@ public class AndroidUtil
             @Override
             protected void onPreExecute()
             {
-                String title = ResourcesUtil.getString(context, "progress_dialog_title");
+                String title = ResourcesUtil.getString(context, "cv_progress_dialog_title");
                 progressDialog = new ProgressDialog(context);
                 progressDialog.setMax(100);
                 progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
@@ -117,7 +120,7 @@ public class AndroidUtil
                     public void onCancel(DialogInterface dialog)
                     {
                         canceled = true;
-                        String cancel = ResourcesUtil.getString(context, "task_canceled");
+                        String cancel = ResourcesUtil.getString(context, "cv_task_canceled");
                         ToastUtil.show(context, cancel);
                     }
                 });
@@ -170,11 +173,16 @@ public class AndroidUtil
                 if (!canceled) {
                     if (FileUtil.isValid(apkFile)) {
                         Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.setDataAndType(Uri.fromFile(apkFile), "application/vnd.android.package-archive");
                         context.startActivity(intent);
+                        if (context instanceof Activity) {
+                            Activity activity = (Activity) context;
+//                            activity.finish();
+                        }
                     }
                     else {
-                        String title = ResourcesUtil.getString(context, "download_fault");
+                        String title = ResourcesUtil.getString(context, "cv_download_fault");
                         ToastUtil.show(context, title);
                     }
                 }
@@ -193,9 +201,9 @@ public class AndroidUtil
                 super.onPostExecute(versionInfo);
 
                 if (versionInfo.newVersion) {
-                    String title = ResourcesUtil.getString(context, "version_upgrade_title");
-                    String cancel = ResourcesUtil.getString(context, "cancel");
-                    String ok = ResourcesUtil.getString(context, "ok");
+                    String title = ResourcesUtil.getString(context, "cv_upgrade_title");
+                    String cancel = ResourcesUtil.getString(context, "cv_cancel");
+                    String ok = ResourcesUtil.getString(context, "cv_ok");
                     DialogUtil.showAlert(context, title, versionInfo.changes, cancel, ok, new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int which)
@@ -204,9 +212,9 @@ public class AndroidUtil
                         }
                     });
                 }
-                else {
-                    ToastUtil.show(context, ResourcesUtil.getString(context, "version_new_title"));
-                }
+//                else {
+//                    ToastUtil.show(context, ResourcesUtil.getString(context, "cv_new_title"));
+//                }
             }
         };
 
@@ -247,7 +255,44 @@ public class AndroidUtil
         if (context == null) {
             return null;
         }
-        return getExternalStorage(context.getPackageName(), type);
+        File file = getExternalStorage(context.getPackageName(), type);
+        if (file == null) {
+            file = context.getExternalFilesDir(type);
+            if (file == null) {
+                file = new File(context.getFilesDir(), type);
+            }
+        }
+
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+
+        return file;
+    }
+
+    public static File getApplicationThumbnailDir(Context context)
+    {
+        return getApplicationExternalStorage(context, ".thumbnail");
+    }
+
+    public static File getApplicationImageDir(Context context)
+    {
+        return getApplicationExternalStorage(context, ".image");
+    }
+
+    public static File getApplicationVideoDir(Context context)
+    {
+        return getApplicationExternalStorage(context, ".video");
+    }
+
+    public static File getApplicationAudioDir(Context context)
+    {
+        return getApplicationExternalStorage(context, ".audio");
+    }
+
+    public static File getApplicationCacheDir(Context context)
+    {
+        return getApplicationExternalStorage(context, ".cache");
     }
 
     public static File getApplicationTempFile(Context context, String type, String extName)
@@ -255,7 +300,7 @@ public class AndroidUtil
         if (context == null) {
             return null;
         }
-        File dir = getExternalStorage(context.getPackageName(), type);
+        File dir = getApplicationExternalStorage(context, type);
 
         return FileUtil.createTemp(dir, extName);
     }
@@ -263,7 +308,7 @@ public class AndroidUtil
     public static File getExternalStorage(String... types)
     {
         File file = getExternalStorage();
-        if (ArrayUtil.isValid(types)) {
+        if (file != null && ArrayUtil.isValid(types)) {
             for (String type : types) {
                 file = new File(file, type);
                 if (!file.exists()) {
@@ -312,7 +357,7 @@ public class AndroidUtil
     public static int getExternalStorageFreePercent()
     {
         StatFs fs = getExternalStorageStatFs();
-        if(fs==null){
+        if (fs == null) {
             return -1;
         }
         float totalBlocks = fs.getBlockCount();
@@ -374,5 +419,43 @@ public class AndroidUtil
     public static int getSDKVersion()
     {
         return android.os.Build.VERSION.SDK_INT;
+    }
+
+    public static DisplayMetrics getDisplayMetrics(Activity context)
+    {
+        DisplayMetrics dm = new DisplayMetrics();
+        context.getWindowManager().getDefaultDisplay().getMetrics(dm);
+        return dm;
+    }
+
+    public static float applyDimension(Activity context, int unit, float value)
+    {
+        return applyDimension(unit, value, getDisplayMetrics(context));
+    }
+
+    public static float applyDimension(int unit, float value, DisplayMetrics metrics)
+    {
+        switch (unit) {
+            case TypedValue.COMPLEX_UNIT_PX:
+                return value;
+
+            case TypedValue.COMPLEX_UNIT_DIP:
+                return value * metrics.density;
+
+            case TypedValue.COMPLEX_UNIT_SP:
+                return value * metrics.scaledDensity;
+
+            case TypedValue.COMPLEX_UNIT_PT:
+                return value * metrics.xdpi * (1.0f / 72);
+
+            case TypedValue.COMPLEX_UNIT_IN:
+                return value * metrics.xdpi;
+
+            case TypedValue.COMPLEX_UNIT_MM:
+                return value * metrics.xdpi * (1.0f / 25.4f);
+        }
+
+        return 0;
+
     }
 }

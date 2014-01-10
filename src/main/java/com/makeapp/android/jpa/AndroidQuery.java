@@ -1,13 +1,21 @@
 package com.makeapp.android.jpa;
 
-import android.database.Cursor;
-import com.makeapp.javase.log.Logger;
-import com.makeapp.javase.lang.ArrayUtil;
-import com.makeapp.javase.util.DataUtil;
-import com.makeapp.javase.lang.StringUtil;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import javax.persistence.Parameter;
+import javax.persistence.Query;
+import javax.persistence.TemporalType;
 
-import javax.persistence.*;
-import java.util.*;
+import android.database.Cursor;
+import com.makeapp.javase.lang.ArrayUtil;
+import com.makeapp.javase.lang.StringUtil;
+import com.makeapp.javase.log.Logger;
+import com.makeapp.javase.util.DataUtil;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,8 +23,8 @@ import java.util.*;
  * Date: 11-5-18
  * Time: ����10:48
  */
-public class AndroidQuery<X>
-    implements TypedQuery<X>
+public class AndroidQuery
+    implements Query
 {
     private String sql = null;
 
@@ -29,8 +37,8 @@ public class AndroidQuery<X>
     private int startPosition = -1;
 
     AndroidEntityManager entityManager;
-    Logger logger = Logger.getLogger("SQLiteJPA");
 
+    Logger logger = Logger.getLogger("SQLiteJPA");
 
     public AndroidQuery(AndroidEntityManager entityManager, String qlString, Class resultClass)
     {
@@ -42,6 +50,39 @@ public class AndroidQuery<X>
     // limit 0
     private String getSql()
     {
+        if (sql.startsWith("from")) {
+            StringBuffer buffer = new StringBuffer();
+            String className = sql.substring(5);
+            int pos = className.indexOf(" ");
+            if (pos > 0) {
+                className = className.substring(0, pos);
+            }
+            EntityClass entityClass = entityManager.getEntityClass(className);
+            buffer.append("select * from ");
+            resultClass = entityClass.getClazz();
+            if (entityClass != null) {
+                buffer.append(entityClass.getTableName());
+            }
+            buffer.append(getWhere());
+            sql = buffer.toString();
+        }
+        else if (sql.startsWith("count from")) {
+            StringBuffer buffer = new StringBuffer();
+            String className = sql.substring("count from".length() + 1);
+            int pos = className.indexOf(" ");
+            if (pos > 0) {
+                className = className.substring(0, pos);
+            }
+            EntityClass entityClass = entityManager.getEntityClass(className);
+            buffer.append("select count(*) as ct from ");
+            resultClass = entityClass.getClazz();
+            if (entityClass != null) {
+                buffer.append(entityClass.getTableName());
+            }
+            buffer.append(getWhere());
+            sql = buffer.toString();
+        }
+
         if (maxResult > 0 || startPosition > 0) {
             if (maxResult > 0 && startPosition > 0) {
                 return sql + " limit " + startPosition + ", " + maxResult;
@@ -50,28 +91,52 @@ public class AndroidQuery<X>
                 return sql + " limit " + maxResult;
             }
         }
+
         return sql;
+    }
+
+    private String getWhere()
+    {
+        StringBuffer buf = new StringBuffer();
+        if (values.size() > 0) {
+            buf.append(" where ");
+            boolean added = false;
+            for (Parameter<?> p : values) {
+                if (added) {
+                    buf.append(" and ");
+                }
+                added = true;
+                buf.append(p.getName()).append("=");
+                buf.append("?");
+            }
+        }
+        return buf.toString();
     }
 
     private String[] getBindValues()
     {
         String[] bindValues = new String[values.size()];
-        for (int i = 1; i <= values.size(); i++) {
+        int i = 0;
+        for (Parameter pv : values) {
+            i++;
             for (Parameter<?> p : values) {
                 if (i == p.getPosition()) {
                     bindValues[i - 1] = DataUtil.getString(((ParameterImpl) p).value, null);
                     break;
                 }
             }
+            bindValues[i - 1] = DataUtil.getString(((ParameterImpl) pv).value, null);
         }
         return bindValues;
     }
 
     public List getResultList()
     {
-        logger.info(getSql());
+        String sql = getSql();
 
-        Cursor cursor = entityManager.rawQuery(getSql(), getBindValues());
+        logger.info(sql);
+
+        Cursor cursor = entityManager.rawQuery(sql, getBindValues());
         List entities = new ArrayList();
         try {
             while (cursor.moveToNext()) {
@@ -84,18 +149,20 @@ public class AndroidQuery<X>
         return entities;
     }
 
-    public X getSingleResult()
+    public Object getSingleResult()
     {
+        maxResult = 1;
         String[] values = getBindValues();
         StringBuffer buffer = new StringBuffer();
-        buffer.append(sql);
+        buffer.append(getSql());
         for (String v : values) {
             buffer.append("|").append(v);
         }
+        logger.info(buffer.toString());
         Cursor cursor = entityManager.rawQuery(getSql(), values);
         try {
             if (cursor.moveToNext()) {
-                return (X) getEntity(cursor);
+                return getEntity(cursor);
             }
         }
         finally {
@@ -106,16 +173,16 @@ public class AndroidQuery<X>
 
     public Object getEntity(Cursor cursor)
     {
-        boolean selectValue = sql.indexOf("count") > 0;
+        boolean selectValue = false;//sql.indexOf("count") > 0  && sql.indexOf("group")==-1;
         if (resultClass == null || selectValue) {
             int columnCount = cursor.getColumnCount();
             Object[] results = new Object[columnCount];
             for (int i = 0; i < columnCount; i++) {
                 results[i] = cursor.getString(i);
             }
-            if (selectValue && ArrayUtil.isValid(results)) {
-                return results[0];
-            }
+//            if (selectValue && ArrayUtil.isValid(results)) {
+//                return results[0];
+//            }
             return results;
         }
         else {
@@ -125,10 +192,19 @@ public class AndroidQuery<X>
 
     public int executeUpdate()
     {
-        return 0;
+        try {
+
+
+            entityManager.executeUpdate(getSql(), getBindValues());
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            return 0;
+        }
+        return 1;
     }
 
-    public TypedQuery<X> setMaxResults(int maxResult)
+    public Query setMaxResults(int maxResult)
     {
         this.maxResult = maxResult;
         return this;
@@ -139,7 +215,7 @@ public class AndroidQuery<X>
         return maxResult;
     }
 
-    public TypedQuery<X> setFirstResult(int startPosition)
+    public Query setFirstResult(int startPosition)
     {
         this.startPosition = startPosition;
         return this;
@@ -150,7 +226,7 @@ public class AndroidQuery<X>
         return startPosition;
     }
 
-    public TypedQuery<X> setHint(String hintName, Object value)
+    public Query setHint(String hintName, Object value)
     {
         return null;
     }
@@ -160,41 +236,41 @@ public class AndroidQuery<X>
         return null;
     }
 
-    public <T> TypedQuery<X> setParameter(Parameter<T> param, T value)
+    public <T> Query setParameter(Parameter<T> param, T value)
     {
         return null;
     }
 
-    public TypedQuery<X> setParameter(Parameter<Calendar> param, Calendar value, TemporalType temporalType)
+    public Query setParameter(Parameter<Calendar> param, Calendar value, TemporalType temporalType)
     {
         return this;
     }
 
-    public TypedQuery<X> setParameter(Parameter<Date> param, Date value, TemporalType temporalType)
+    public Query setParameter(Parameter<Date> param, Date value, TemporalType temporalType)
     {
         return this;
     }
 
-    public TypedQuery<X> setParameter(String name, Object value)
-    {
-        values.add(new ParameterImpl(name, -1, value.getClass(), value));
-        return this;
-    }
-
-    public TypedQuery<X> setParameter(String name, Calendar value, TemporalType temporalType)
-    {
-        values.add(new ParameterImpl(name, -1, value.getClass(), value));
-
-        return this;
-    }
-
-    public TypedQuery<X> setParameter(String name, Date value, TemporalType temporalType)
+    public Query setParameter(String name, Object value)
     {
         values.add(new ParameterImpl(name, -1, value.getClass(), value));
         return this;
     }
 
-    public TypedQuery<X> setParameter(int position, Object value)
+    public Query setParameter(String name, Calendar value, TemporalType temporalType)
+    {
+        values.add(new ParameterImpl(name, -1, value.getClass(), value));
+
+        return this;
+    }
+
+    public Query setParameter(String name, Date value, TemporalType temporalType)
+    {
+        values.add(new ParameterImpl(name, -1, value.getClass(), value));
+        return this;
+    }
+
+    public Query setParameter(int position, Object value)
     {
         if (position == -1) {
             position = values.size() + 1;
@@ -203,7 +279,7 @@ public class AndroidQuery<X>
         return this;
     }
 
-    public TypedQuery<X> setParameter(int position, Calendar value, TemporalType temporalType)
+    public Query setParameter(int position, Calendar value, TemporalType temporalType)
     {
         if (position == -1) {
             position = values.size() + 1;
@@ -212,7 +288,7 @@ public class AndroidQuery<X>
         return this;
     }
 
-    public TypedQuery<X> setParameter(int position, Date value, TemporalType temporalType)
+    public Query setParameter(int position, Date value, TemporalType temporalType)
     {
         if (position == -1) {
             position = values.size() + 1;
@@ -296,25 +372,6 @@ public class AndroidQuery<X>
         return null;
     }
 
-    public TypedQuery<X> setFlushMode(FlushModeType flushMode)
-    {
-        return null;
-    }
-
-    public FlushModeType getFlushMode()
-    {
-        return null;
-    }
-
-    public TypedQuery<X> setLockMode(LockModeType lockMode)
-    {
-        return null;
-    }
-
-    public LockModeType getLockMode()
-    {
-        return null;
-    }
 
     public <T> T unwrap(Class<T> cls)
     {

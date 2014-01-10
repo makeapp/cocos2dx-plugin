@@ -11,13 +11,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.metamodel.Metamodel;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import com.makeapp.android.jpa.criteria.CriteriaBuilderImpl;
-import com.makeapp.android.jpa.metamodel.MetamodelImpl;
 import com.makeapp.javase.lang.ArrayUtil;
 import com.makeapp.javase.lang.FieldUtil;
 import com.makeapp.javase.lang.StringUtil;
@@ -33,7 +29,6 @@ public class AndroidEntityManagerFactory
 {
     PersistenceUnitEntity unitEntity;
     Logger logger = Logger.getLogger("SQLiteJPA");
-    MetamodelImpl metamodel = null;
 
     public AndroidEntityManagerFactory(PersistenceUnitEntity unitEntity)
     {
@@ -52,7 +47,7 @@ public class AndroidEntityManagerFactory
                 buildEntityField(ec);
                 buildEntityTable(sqLiteDatabase, ec);
             }
-            metamodel = MetamodelImpl.buildMetamodel(entities);
+//            metamodel = MetamodelImpl.buildMetamodel(entities);
 
         }
         finally {
@@ -275,15 +270,15 @@ public class AndroidEntityManagerFactory
         return new AndroidEntityManager(unitEntity, dbQname, this);
     }
 
-    public CriteriaBuilder getCriteriaBuilder()
-    {
-        return new CriteriaBuilderImpl(this);
-    }
-
-    public Metamodel getMetamodel()
-    {
-        return metamodel;
-    }
+//    public CriteriaBuilder getCriteriaBuilder()
+//    {
+//        return new CriteriaBuilderImpl(this);
+//    }
+//
+//    public Metamodel getMetamodel()
+//    {
+//        return metamodel;
+//    }
 
     public boolean isOpen()
     {
@@ -304,9 +299,9 @@ public class AndroidEntityManagerFactory
     {
         return null;
     }
-
-    public PersistenceUnitUtil getPersistenceUnitUtil()
-    {
-        return null;
-    }
+//
+//    public PersistenceUnitUtil getPersistenceUnitUtil()
+//    {
+//        return null;
+//    }
 }

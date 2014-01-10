@@ -9,24 +9,26 @@ import android.widget.CompoundButton;
 
 /**
  * @author <a href="mailto:yuanyou@shqianzhi.com">yuanyou</a>
- * @version $Date:12-12-14 ÏÂÎç12:11 $
+ * @version $Date:12-12-14 ï¿½ï¿½ï¿½ï¿½12:11 $
  *          $Id$
  */
-public class CompoundButtonUtil extends ViewUtil
+public class CompoundButtonUtil
 {
-    public static void setOnCheckedChangeListener(View view, int checkboxId, CompoundButton.OnCheckedChangeListener listener)
+    public static CompoundButton setOnCheckedChangeListener(View view, int checkboxId, CompoundButton.OnCheckedChangeListener listener)
     {
-        CheckBox checkbox = (CheckBox) ViewUtil.findViewById(view, checkboxId);
+        CompoundButton checkbox = (CompoundButton) ViewUtil.findViewById(view, checkboxId);
         if (checkbox != null) {
             checkbox.setOnCheckedChangeListener(listener);
         }
+        return checkbox;
     }
 
-    public static void setViewChecked(View view, int checkboxId, boolean checked)
+    public static CompoundButton setViewChecked(View view, int checkboxId, boolean checked)
     {
-        CheckBox checkbox = (CheckBox) ViewUtil.findViewById(view, checkboxId);
+        CompoundButton checkbox = (CompoundButton) ViewUtil.findViewById(view, checkboxId);
         if (checkbox != null) {
             checkbox.setChecked(checked);
         }
+        return checkbox;
     }
 }

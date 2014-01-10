@@ -16,6 +16,13 @@
 
 package com.makeapp.android.adapter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,12 +32,7 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Comparator;
-import java.util.Collections;
+import com.makeapp.android.util.HandlerUtil;
 
 /**
  * A ListAdapter that manages a ListView backed by an array of arbitrary
@@ -38,11 +40,11 @@ import java.util.Collections;
  * a single TextView.  If you want to use a more complex layout, use the constructors that
  * also takes a field id.  That field id should reference a TextView in the larger layout
  * resource.
- *
+ * <p/>
  * However the TextView is referenced, it will be filled with the toString() of each object in
  * the array. You can add lists or arrays of custom objects. Override the toString() method
  * of your objects to determine what text will be displayed for the item in the list.
- *
+ * <p/>
  * To use something other than TextViews for the array display, for instance, ImageViews,
  * or to have some of data besides toString() results fill the views,
  * override {@link #getView(int, View, ViewGroup)} to return the type of view you want.
@@ -88,7 +90,7 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      */
     private boolean mNotifyOnChange = true;
 
-    private Context mContext;    
+    private Context mContext;
 
     private ArrayList<T> mOriginalValues;
     private ArrayFilter mFilter;
@@ -98,73 +100,79 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
     /**
      * Constructor
      *
-     * @param context The current context.
+     * @param context            The current context.
      * @param textViewResourceId The resource ID for a layout file containing a TextView to use when
-     *                 instantiating views.
+     *                           instantiating views.
      */
-    public ArrayAdapter(Context context, int textViewResourceId) {
+    public ArrayAdapter(Context context, int textViewResourceId)
+    {
         init(context, textViewResourceId, 0, new ArrayList<T>());
     }
 
     /**
      * Constructor
      *
-     * @param context The current context.
-     * @param resource The resource ID for a layout file containing a layout to use when
-     *                 instantiating views.
+     * @param context            The current context.
+     * @param resource           The resource ID for a layout file containing a layout to use when
+     *                           instantiating views.
      * @param textViewResourceId The id of the TextView within the layout resource to be populated
      */
-    public ArrayAdapter(Context context, int resource, int textViewResourceId) {
+    public ArrayAdapter(Context context, int resource, int textViewResourceId)
+    {
         init(context, resource, textViewResourceId, new ArrayList<T>());
     }
 
     /**
      * Constructor
      *
-     * @param context The current context.
+     * @param context            The current context.
      * @param textViewResourceId The resource ID for a layout file containing a TextView to use when
-     *                 instantiating views.
-     * @param objects The objects to represent in the ListView.
+     *                           instantiating views.
+     * @param objects            The objects to represent in the ListView.
      */
-    public ArrayAdapter(Context context, int textViewResourceId, T[] objects) {
+    public ArrayAdapter(Context context, int textViewResourceId, T[] objects)
+    {
         init(context, textViewResourceId, 0, Arrays.asList(objects));
     }
 
     /**
      * Constructor
      *
-     * @param context The current context.
-     * @param resource The resource ID for a layout file containing a layout to use when
-     *                 instantiating views.
+     * @param context            The current context.
+     * @param resource           The resource ID for a layout file containing a layout to use when
+     *                           instantiating views.
      * @param textViewResourceId The id of the TextView within the layout resource to be populated
-     * @param objects The objects to represent in the ListView.
+     * @param objects            The objects to represent in the ListView.
      */
-    public ArrayAdapter(Context context, int resource, int textViewResourceId, T[] objects) {
+    public ArrayAdapter(Context context, int resource, int textViewResourceId, T[] objects)
+    {
         init(context, resource, textViewResourceId, Arrays.asList(objects));
     }
 
     /**
      * Constructor
      *
-     * @param context The current context.
+     * @param context            The current context.
      * @param textViewResourceId The resource ID for a layout file containing a TextView to use when
-     *                 instantiating views.
-     * @param objects The objects to represent in the ListView.
+     *                           instantiating views.
+     * @param objects            The objects to represent in the ListView.
      */
-    public ArrayAdapter(Context context, int textViewResourceId, List<T> objects) {
+    public ArrayAdapter(Context context, int textViewResourceId, List<T> objects)
+    {
         init(context, textViewResourceId, 0, objects);
     }
 
     /**
      * Constructor
      *
-     * @param context The current context.
-     * @param resource The resource ID for a layout file containing a layout to use when
-     *                 instantiating views.
+     * @param context            The current context.
+     * @param resource           The resource ID for a layout file containing a layout to use when
+     *                           instantiating views.
      * @param textViewResourceId The id of the TextView within the layout resource to be populated
-     * @param objects The objects to represent in the ListView.
+     * @param objects            The objects to represent in the ListView.
      */
-    public ArrayAdapter(Context context, int resource, int textViewResourceId, List<T> objects) {
+    public ArrayAdapter(Context context, int resource, int textViewResourceId, List<T> objects)
+    {
         init(context, resource, textViewResourceId, objects);
     }
 
@@ -173,25 +181,29 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      *
      * @param object The object to add at the end of the array.
      */
-    public void add(T object) {
+    public void add(T object)
+    {
         if (mOriginalValues != null) {
             synchronized (mLock) {
                 mOriginalValues.add(object);
                 if (mNotifyOnChange) notifyDataSetChanged();
             }
-        } else {
+        }
+        else {
             mObjects.add(object);
             if (mNotifyOnChange) notifyDataSetChanged();
         }
     }
 
-    public void addAll(List<T> object) {
+    public void addAll(Collection<T> object)
+    {
         if (mOriginalValues != null) {
             synchronized (mLock) {
                 mOriginalValues.addAll(object);
                 if (mNotifyOnChange) notifyDataSetChanged();
             }
-        } else {
+        }
+        else {
             mObjects.addAll(object);
             if (mNotifyOnChange) notifyDataSetChanged();
         }
@@ -201,15 +213,17 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * Inserts the specified object at the specified index in the array.
      *
      * @param object The object to insert into the array.
-     * @param index The index at which the object must be inserted.
+     * @param index  The index at which the object must be inserted.
      */
-    public void insert(T object, int index) {
+    public void insert(T object, int index)
+    {
         if (mOriginalValues != null) {
             synchronized (mLock) {
                 mOriginalValues.add(index, object);
                 if (mNotifyOnChange) notifyDataSetChanged();
             }
-        } else {
+        }
+        else {
             mObjects.add(index, object);
             if (mNotifyOnChange) notifyDataSetChanged();
         }
@@ -220,12 +234,14 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      *
      * @param object The object to remove.
      */
-    public void remove(T object) {
+    public void remove(T object)
+    {
         if (mOriginalValues != null) {
             synchronized (mLock) {
                 mOriginalValues.remove(object);
             }
-        } else {
+        }
+        else {
             mObjects.remove(object);
         }
         if (mNotifyOnChange) notifyDataSetChanged();
@@ -234,12 +250,14 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
     /**
      * Remove all elements from the list.
      */
-    public void clear() {
+    public void clear()
+    {
         if (mOriginalValues != null) {
             synchronized (mLock) {
                 mOriginalValues.clear();
             }
-        } else {
+        }
+        else {
             mObjects.clear();
         }
         if (mNotifyOnChange) notifyDataSetChanged();
@@ -249,18 +267,20 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * Sorts the content of this adapter using the specified comparator.
      *
      * @param comparator The comparator used to sort the objects contained
-     *        in this adapter.
+     *                   in this adapter.
      */
-    public void sort(Comparator<? super T> comparator) {
+    public void sort(Comparator<? super T> comparator)
+    {
         Collections.sort(mObjects, comparator);
-        if (mNotifyOnChange) notifyDataSetChanged();        
+        if (mNotifyOnChange) notifyDataSetChanged();
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void notifyDataSetChanged() {
+    public void notifyDataSetChanged()
+    {
         super.notifyDataSetChanged();
         mNotifyOnChange = true;
     }
@@ -271,7 +291,7 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * {@link #notifyDataSetChanged}.  If set to false, caller must
      * manually call notifyDataSetChanged() to have the changes
      * reflected in the attached view.
-     *
+     * <p/>
      * The default is true, and calling notifyDataSetChanged()
      * resets the flag to true.
      *
@@ -279,13 +299,15 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      *                       automatically call {@link
      *                       #notifyDataSetChanged}
      */
-    public void setNotifyOnChange(boolean notifyOnChange) {
+    public void setNotifyOnChange(boolean notifyOnChange)
+    {
         mNotifyOnChange = notifyOnChange;
     }
 
-    private void init(Context context, int resource, int textViewResourceId, List<T> objects) {
+    private void init(Context context, int resource, int textViewResourceId, List<T> objects)
+    {
         mContext = context;
-        mInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mResource = mDropDownResource = resource;
         mObjects = objects;
         mFieldId = textViewResourceId;
@@ -297,21 +319,24 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      *
      * @return The Context associated with this adapter.
      */
-    public Context getContext() {
+    public Context getContext()
+    {
         return mContext;
     }
 
     /**
      * {@inheritDoc}
      */
-    public int getCount() {
+    public int getCount()
+    {
         return mObjects.size();
     }
 
     /**
      * {@inheritDoc}
      */
-    public T getItem(int position) {
+    public T getItem(int position)
+    {
         return mObjects.get(position);
     }
 
@@ -322,32 +347,37 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      *
      * @return The position of the specified item.
      */
-    public int getPosition(T item) {
+    public int getPosition(T item)
+    {
         return mObjects.indexOf(item);
     }
 
     /**
      * {@inheritDoc}
      */
-    public long getItemId(int position) {
+    public long getItemId(int position)
+    {
         return position;
     }
 
     /**
      * {@inheritDoc}
      */
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
         return createViewFromResource(position, convertView, parent, mResource);
     }
 
     private View createViewFromResource(int position, View convertView, ViewGroup parent,
-            int resource) {
+                                        int resource)
+    {
         View view;
         TextView text;
 
         if (convertView == null) {
             view = mInflater.inflate(resource, parent, false);
-        } else {
+        }
+        else {
             view = convertView;
         }
 
@@ -355,20 +385,23 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
             if (mFieldId == 0) {
                 //  If no custom field is assigned, assume the whole resource is a TextView
                 text = (TextView) view;
-            } else {
+            }
+            else {
                 //  Otherwise, find the TextView field within the layout
                 text = (TextView) view.findViewById(mFieldId);
             }
-        } catch (ClassCastException e) {
+        }
+        catch (ClassCastException e) {
             Log.e("ArrayAdapter", "You must supply a resource ID for a TextView");
             throw new IllegalStateException(
-                    "ArrayAdapter requires the resource ID to be a TextView", e);
+                "ArrayAdapter requires the resource ID to be a TextView", e);
         }
 
         T item = getItem(position);
         if (item instanceof CharSequence) {
-            text.setText((CharSequence)item);
-        } else {
+            text.setText((CharSequence) item);
+        }
+        else {
             text.setText(item.toString());
         }
 
@@ -379,9 +412,11 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * <p>Sets the layout resource to create the drop down views.</p>
      *
      * @param resource the layout resource defining the drop down views
+     *
      * @see #getDropDownView(int, android.view.View, android.view.ViewGroup)
      */
-    public void setDropDownViewResource(int resource) {
+    public void setDropDownViewResource(int resource)
+    {
         this.mDropDownResource = resource;
     }
 
@@ -389,7 +424,8 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * {@inheritDoc}
      */
     @Override
-    public View getDropDownView(int position, View convertView, ViewGroup parent) {
+    public View getDropDownView(int position, View convertView, ViewGroup parent)
+    {
         return createViewFromResource(position, convertView, parent, mDropDownResource);
     }
 
@@ -397,14 +433,15 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * Creates a new ArrayAdapter from external resources. The content of the array is
      * obtained through {@link android.content.res.Resources#getTextArray(int)}.
      *
-     * @param context The application's environment.
+     * @param context        The application's environment.
      * @param textArrayResId The identifier of the array to use as the data source.
-     * @param textViewResId The identifier of the layout used to create views.
+     * @param textViewResId  The identifier of the layout used to create views.
      *
      * @return An ArrayAdapter<CharSequence>.
      */
     public static ArrayAdapter<CharSequence> createFromResource(Context context,
-            int textArrayResId, int textViewResId) {
+                                                                int textArrayResId, int textViewResId)
+    {
         CharSequence[] strings = context.getResources().getTextArray(textArrayResId);
         return new ArrayAdapter<CharSequence>(context, textViewResId, strings);
     }
@@ -412,11 +449,52 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
     /**
      * {@inheritDoc}
      */
-    public Filter getFilter() {
+    public Filter getFilter()
+    {
         if (mFilter == null) {
             mFilter = new ArrayFilter();
         }
         return mFilter;
+    }
+
+    public void postAdd(final T obj)
+    {
+        HandlerUtil.postMain(new Runnable()
+        {
+            public void run()
+            {
+                add(obj);
+            }
+        });
+    }
+
+    public void postAddAll(final Collection<T> obj)
+    {
+        HandlerUtil.postMain(new Runnable()
+        {
+            public void run()
+            {
+                addAll(obj);
+            }
+        });
+    }
+
+    public void cleanAddAll(final Collection<T> obj)
+    {
+        clear();
+        addAll(obj);
+    }
+
+    public void postCleanAddAll(final Collection<T> obj)
+    {
+        HandlerUtil.postMain(new Runnable()
+        {
+            public void run()
+            {
+                clear();
+                addAll(obj);
+            }
+        });
     }
 
     /**
@@ -424,9 +502,11 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
      * a prefix. Each item that does not start with the supplied prefix
      * is removed from the list.</p>
      */
-    private class ArrayFilter extends Filter {
+    private class ArrayFilter extends Filter
+    {
         @Override
-        protected FilterResults performFiltering(CharSequence prefix) {
+        protected FilterResults performFiltering(CharSequence prefix)
+        {
             FilterResults results = new FilterResults();
 
             if (mOriginalValues == null) {
@@ -441,7 +521,8 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
                     results.values = list;
                     results.count = list.size();
                 }
-            } else {
+            }
+            else {
                 String prefixString = prefix.toString().toLowerCase();
 
                 final ArrayList<T> values = mOriginalValues;
@@ -456,7 +537,8 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
                     // First match against the whole, non-splitted value
                     if (valueText.startsWith(prefixString)) {
                         newValues.add(value);
-                    } else {
+                    }
+                    else {
                         final String[] words = valueText.split(" ");
                         final int wordCount = words.length;
 
@@ -477,12 +559,14 @@ public class ArrayAdapter<T> extends BaseAdapter implements Filterable
         }
 
         @Override
-        protected void publishResults(CharSequence constraint, FilterResults results) {
+        protected void publishResults(CharSequence constraint, FilterResults results)
+        {
             //noinspection unchecked
             mObjects = (List<T>) results.values;
             if (results.count > 0) {
                 notifyDataSetChanged();
-            } else {
+            }
+            else {
                 notifyDataSetInvalidated();
             }
         }
