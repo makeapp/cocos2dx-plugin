@@ -189,8 +189,7 @@ public class HtmlImageGetter
         };
         task.setImageListener(imageListener);
         task.setImageHeight(imageHeight);
-//        task.setWidth(imageWidth);
-//        task.setHeight(imageHeight);
+        task.setImageWidth(imageWidth);
         task.show(filePath);
         if (switchDrawable.getDrawable2() != null) {
             return switchDrawable.getDrawable2();

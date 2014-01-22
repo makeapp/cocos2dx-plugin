@@ -81,11 +81,16 @@ public class LocaleImageTask
             onPostExecute(bitmap);
         }
         else {
-            bitmap = BitmapUtil.getThumbnails(params[0]);
+            bitmap = getBitmap(params[0]);
             bitmapCache.put(params[0], bitmap);
         }
 
         return bitmap;
+    }
+
+    public Bitmap getBitmap(String path)
+    {
+        return BitmapUtil.getThumbnails(path);
     }
 
     protected void onPostExecute(Bitmap bitmap)

@@ -24,197 +24,36 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="8126bf09-cf81-4376-8c60-24381de86d60" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp/android" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/image" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp/android/jpa" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/makeapp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/media" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/DrawableSwitch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/text/Html.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/image/ImageListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/LoopAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/MediaStoreUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/RadioGroupUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteFileTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteImageTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteThumbnailTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/SimpleExpandableListAdapter.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kobjects_kobjects_j2me_0_0_SNAPSHOT_20040926_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kxml_kxml_2_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlpull_xmlpull_1_1_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_android_android_2_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_android_android_framework_2_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_code_ksoap2_android_ksoap2_base_2_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_google_code_ksoap2_android_ksoap2_j2se_2_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__com_makeapp_makeapp_javase_4_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__commons_codec_commons_codec_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_activation_activation_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_bind_jaxb_api_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_stream_stax_api_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__javax_xml_ws_jaxws_api_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_json_json_20080701.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__xerces_xmlParserAPIs_2_6_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\.idea\libraries\Maven__xpp3_xpp3_1_1_4c.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\action\AndroidAction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\action\AndroidClientAction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\adapter\CustomListAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\adapter\ProgressAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\AbstractNode.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\BasicPathUsageException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CollectionJoinImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaBuilderImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaQueryCompiler.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaQueryImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\CriteriaSubqueryImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ExpressionImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\FromImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\IllegalDereferenceException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\JoinImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ListJoinImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\MapJoinImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\OrderImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ParameterContainer.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ParameterRegistry.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\PathImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\PathSource.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\QueryStructure.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\Renderable.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\SelectionImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\SetJoinImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\TupleElementImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\ValueHandlerFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\AbstractTupleElement.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\BinaryArithmeticOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\BinaryOperatorExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\CoalesceExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\CompoundSelectionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ConcatExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\EntityTypeExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ExpressionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ListIndexExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\LiteralExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\MapEntryExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\NullLiteralExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\NullifExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\ParameterExpressionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\PathTypeExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SearchedCaseExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SelectionImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SimpleCaseExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SizeOfCollectionExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\SubqueryComparisonModifierExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\UnaryArithmeticOperation.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\UnaryOperatorExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\AbsFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\AggregationFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\BasicFunctionExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CastFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentDateFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentTimeFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\CurrentTimestampFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\FunctionExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LengthFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LocateFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\LowerFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\ParameterizedFunctionExpression.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\SqrtFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\SubstringFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\TrimFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\expression\function\UpperFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractFromImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractJoinImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\AbstractPathImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\CollectionAttributeJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\ListAttributeJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\MapAttributeJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\MapKeyHelpers.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\PluralAttributeJoinSupport.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\PluralAttributePath.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\RootImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SetAttributeJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SingularAttributeJoin.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\path\SingularAttributePath.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\AbstractPredicateImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\AbstractSimplePredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BetweenPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanAssertionPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanExpressionPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\BooleanStaticAssertionPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ComparisonPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\CompoundPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ExistsPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\ExplicitTruthValueCheck.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\InPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\IsEmptyPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\LikePredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\MemberOfPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\NullnessPredicate.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\criteria\predicate\TruthValue.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractAttribute.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractIdentifiableType.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractManagedType.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AbstractType.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AttributeFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\AttributeImplementor.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\BasicTypeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\EmbeddableTypeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\EntityTypeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MappedSuperclassTypeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MetadataContext.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\MetamodelImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\PluralAttributeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\SingularAttributeImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\work\source\makeapp\module\4.0\makeapp-android\src\main\java\com\makeapp\android\jpa\metamodel\Value.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/action" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/expression" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/expression/function" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/metamodel" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/path" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/criteria/predicate" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManagerFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidEntityManagerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidJPAApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidJPAApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidQuery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/adapter/ArrayListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/AsyncTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/activity/AsyncTaskActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/activity/AsyncTaskActivity.java" />
+    <list default="true" id="8126bf09-cf81-4376-8c60-24381de86d60" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_2_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_framework_2_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_ksoap2_android_ksoap2_base_2_5_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_ksoap2_android_ksoap2_j2se_2_5_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_makeapp_makeapp_javase_4_0_SNAPSHOT.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_ws_jaxws_api_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20080701.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_1_1_4c.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/CompoundButtonUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/CompoundButtonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ContactUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/EditTextUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/EditTextUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/EntityField.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/EntityField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/GridViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/GridViewUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageDownloader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ListViewUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_support_v4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/PopupWindowUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/PopupWindowUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/RemoteImageView.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/RemoteImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/TextViewUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kobjects_kobjects_j2me_0_0_SNAPSHOT_20040926_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kobjects_kobjects_j2me_0_0_SNAPSHOT_20040926_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kxml_kxml_2_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_kxml_kxml_2_2_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlpull_xmlpull_1_1_3_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlpull_xmlpull_1_1_3_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makeapp-android.iml" afterPath="$PROJECT_DIR$/makeapp-android.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="makeapp-android.iws" />
@@ -329,7 +168,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" line="41" class="com.makeapp.android.util.BitmapUtil" package="com.makeapp.android.util">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" line="42" class="com.makeapp.android.util.BitmapUtil" package="com.makeapp.android.util">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -344,7 +183,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="89" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="93" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -359,7 +198,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="100" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" line="104" class="com.makeapp.android.task.LocaleThumbnailTask" package="com.makeapp.android.task">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -389,104 +228,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
+      <file leaf-file-name="LocaleImageTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="4066" max-vertical-offset="8873">
+            <state line="90" column="18" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="2185">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntentUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+      <file leaf-file-name="BitmapUtil.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MimeTypeMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GifView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="7866">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GifAction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GifDecoder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="17518" max-vertical-offset="19114">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewUtil.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="6498" max-vertical-offset="7486">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AudioRecorder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="55" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.55050504" vertical-offset="561" max-vertical-offset="2071">
+            <state line="30" column="10" selection-start="731" selection-end="731" vertical-scroll-proportion="0.22931035" vertical-offset="342" max-vertical-offset="25384">
               <folding>
-                <element signature="e#1202#2297#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;method#drawText#0;class#BitmapUtil#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudioManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+      <file leaf-file-name="AndroidPersistenceProvider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="12562" max-vertical-offset="14212">
+            <state line="21" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2318">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaRecorder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+      <file leaf-file-name="HtmlImageGetter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="-4.92" vertical-offset="2442" max-vertical-offset="7904">
-              <folding>
-                <element signature="class#AudioSource#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="class#VideoSource#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="class#OutputFormat#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="docComment;field#EAAC_PLUS#0;class#AudioEncoder#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="class#VideoEncoder#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="docComment;method#setAudioSamplingRate#0;class#MediaRecorder#0" expanded="true" />
-                <element signature="class#EventHandler#0;class#MediaRecorder#0" expanded="true" />
-              </folding>
+            <state line="174" column="54" selection-start="5185" selection-end="5185" vertical-scroll-proportion="0.0" vertical-offset="3306" max-vertical-offset="4598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LocaleThumbnailTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="71" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="2470">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -498,6 +283,14 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -507,16 +300,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/MediaStoreUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/NotificationUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioPlayer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java" />
       </list>
     </option>
   </component>
@@ -536,6 +330,20 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="makeapp-android" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -579,7 +387,7 @@
     <option name="width" value="1296" />
     <option name="height" value="776" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -590,7 +398,7 @@
     <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -605,6 +413,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Revu" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -612,12 +423,77 @@
               <option name="myItemId" value="makeapp-android" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="makeapp-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Revu" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -627,7 +503,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="MavenSettings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -671,26 +547,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -724,19 +580,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -765,38 +608,17 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
       <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -818,6 +640,114 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cocos2dx-JS" factoryName="Cocos2dx-JS">
+      <option name="scriptType" value="Javascript" />
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -864,28 +794,6 @@
     <configuration useDefault="true">C:\Users\yuanyou\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
-  </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android" />
-          <option name="myCopyRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android\.idea" />
-          <option name="myCopyRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android\.idea" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android" />
-          <option name="myCopyRoot" value="D:\work\source\makeapp\module\4.0\makeapp-android" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -944,11 +852,17 @@
       <workItem from="1379752615930" duration="1372000" />
       <workItem from="1387349380158" duration="41000" />
       <workItem from="1387349425994" duration="2665000" />
+      <workItem from="1389841062742" duration="177000" />
+      <workItem from="1389864778892" duration="22000" />
+      <workItem from="1389864805991" duration="44000" />
+      <workItem from="1390029295253" duration="2217000" />
+      <workItem from="1390031798616" duration="3584000" />
+      <workItem from="1390370222287" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67022000" />
+    <option name="totallyTimeSpent" value="73082000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -971,7 +885,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -985,16 +899,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="ImagePreview&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Particles&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29513344" sideWeight="0.68373984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707354" sideWeight="0.83225286" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2463651" sideWeight="0.6923077" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17851374" sideWeight="0.6923077" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31502423" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28660437" sideWeight="0.8330632" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27786753" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2834891" sideWeight="0.8330632" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Animations&#9;" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliGuard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1013,7 +928,7 @@
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Kotlin" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33021808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RESTClient" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1047,53 +962,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781">
-          <folding />
-        </state>
+        <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="0.0" vertical-offset="4085" max-vertical-offset="14250" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="4066" max-vertical-offset="8873">
-          <folding />
-        </state>
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8873" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
-          <folding />
-        </state>
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638" />
       </provider>
     </entry>
     <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
-          <folding />
-        </state>
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="7866">
-          <folding />
-        </state>
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7866" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
@@ -1112,13 +1008,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="1976">
-          <folding>
-            <element signature="e#1202#2297#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="64" column="55" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="1216" max-vertical-offset="2071" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="29146" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="0.0" vertical-offset="4085" max-vertical-offset="14250" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
@@ -1130,44 +1030,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781">
-          <folding />
-        </state>
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8873">
-          <folding />
-        </state>
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="4066" max-vertical-offset="8873" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638">
-          <folding />
-        </state>
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638" />
       </provider>
     </entry>
     <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994">
-          <folding />
-        </state>
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7866">
-          <folding />
-        </state>
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="2147" max-vertical-offset="7866" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399">
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="17518" max-vertical-offset="19114">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="342" column="46" selection-start="9193" selection-end="9193" vertical-scroll-proportion="0.0" vertical-offset="6498" max-vertical-offset="7486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1615" max-vertical-offset="1976" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2850" max-vertical-offset="3781" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="1767" max-vertical-offset="7638" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="2242" max-vertical-offset="9994" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7866" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="399" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
@@ -1186,27 +1130,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2204">
-          <folding>
-            <element signature="e#1202#2297#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="27" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="23237">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="4" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.0" vertical-offset="318" max-vertical-offset="2071">
-          <folding />
-        </state>
+        <state line="85" column="50" selection-start="2394" selection-end="2394" vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="2204" />
       </provider>
     </entry>
     <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/view/View.java">
@@ -1219,11 +1143,6 @@
         <state line="40" column="14" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="665" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="54" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="2394" />
-      </provider>
-    </entry>
     <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/widget/ImageView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="332" column="16" selection-start="11375" selection-end="11375" vertical-scroll-proportion="0.0" vertical-offset="3851" max-vertical-offset="13984" />
@@ -1231,28 +1150,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="6403">
-          <folding />
-        </state>
+        <state line="113" column="31" selection-start="2421" selection-end="2421" vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="6403" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/view/gif/GifDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="922" column="28" selection-start="24906" selection-end="24906" vertical-scroll-proportion="0.0" vertical-offset="16595" max-vertical-offset="17537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="27" selection-start="6724" selection-end="6724" vertical-scroll-proportion="0.0" vertical-offset="3817" max-vertical-offset="4237">
           <folding />
         </state>
       </provider>
@@ -1266,61 +1174,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/ImageViewUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2824" max-vertical-offset="3439">
+        <state line="150" column="41" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.0" vertical-offset="2824" max-vertical-offset="3439" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="1248" max-vertical-offset="8949" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="6935" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="12562" max-vertical-offset="14212" />
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="0.0" vertical-offset="4085" max-vertical-offset="14250" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="12" selection-start="3195" selection-end="3195" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/RemoteImageTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="28" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0" vertical-offset="305" max-vertical-offset="1843">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/AndroidUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="46" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.0" vertical-offset="2964" max-vertical-offset="7733">
+        <state line="39" column="13" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="7524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/jpa/AndroidPersistenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2242">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/repository/com/google/android/android-framework/2.3.1/android-framework-2.3.1-sources.jar!/android/webkit/MimeTypeMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/HtmlImageGetter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="18" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="1248" max-vertical-offset="8949">
+        <state line="174" column="54" selection-start="5185" selection-end="5185" vertical-scroll-proportion="0.0" vertical-offset="2162" max-vertical-offset="3648">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/IntentUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleImageTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="63" selection-start="3087" selection-end="3087" vertical-scroll-proportion="0.0" vertical-offset="817" max-vertical-offset="6935">
+        <state line="90" column="18" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0" vertical-offset="1016" max-vertical-offset="1691">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/AudioManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/task/LocaleThumbnailTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="26" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="12562" max-vertical-offset="14212">
+        <state line="82" column="71" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="741" max-vertical-offset="1976">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/develop/android-sdk-windows/platforms/android-10/android-src.zip!/android/media/MediaRecorder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/util/BitmapUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="32" selection-start="7575" selection-end="7575" vertical-scroll-proportion="-4.92" vertical-offset="2442" max-vertical-offset="7904">
+        <state line="30" column="10" selection-start="731" selection-end="731" vertical-scroll-proportion="0.22931035" vertical-offset="342" max-vertical-offset="25384">
           <folding>
-            <element signature="class#AudioSource#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="class#VideoSource#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="class#OutputFormat#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="docComment;field#EAAC_PLUS#0;class#AudioEncoder#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="class#VideoEncoder#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="docComment;method#setAudioSamplingRate#0;class#MediaRecorder#0" expanded="true" />
-            <element signature="class#EventHandler#0;class#MediaRecorder#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/makeapp/android/media/AudioRecorder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="55" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.55050504" vertical-offset="561" max-vertical-offset="2071">
-          <folding>
-            <element signature="e#1202#2297#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="class#AudioRecorderListener#0;class#AudioRecorder#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#drawText#0;class#BitmapUtil#0" expanded="true" />
           </folding>
         </state>
       </provider>

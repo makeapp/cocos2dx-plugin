@@ -76,6 +76,10 @@ public class LocaleThumbnailTask extends LocaleImageTask
     }
 
 
+    public Bitmap getBitmap(String path)
+    {
+        return BitmapUtil.getThumbnails(path, imageWidth, imageHeight);
+    }
 
     protected Bitmap doInBackground(String... params)
     {
@@ -99,7 +103,10 @@ public class LocaleThumbnailTask extends LocaleImageTask
                 }
                 else {
                     Bitmap bitmap = super.doInBackground(params);
-                    if (imageWidth != -1 || imageHeight != -1) {
+                    if (imageWidth != -1 && imageHeight != -1) {
+                        bitmap = BitmapUtil.resizeFitBitmap(bitmap, imageWidth, imageHeight);
+                    }
+                    else if (imageWidth != -1 || imageHeight != -1) {
                         bitmap = BitmapUtil.resizeBitmap(bitmap, imageWidth, imageHeight);
                     }
                     if ("PNG".equalsIgnoreCase(extName)) {
