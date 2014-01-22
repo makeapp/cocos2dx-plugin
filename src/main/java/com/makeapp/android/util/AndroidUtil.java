@@ -24,11 +24,11 @@ import android.util.TypedValue;
 import com.makeapp.javase.file.FileUtil;
 import com.makeapp.javase.http.HttpException;
 import com.makeapp.javase.http.HttpUtil;
-import com.makeapp.javase.http.URLUtil;
 import com.makeapp.javase.lang.ArrayUtil;
 import com.makeapp.javase.lang.StringUtil;
 import com.makeapp.javase.util.DataUtil;
 import com.makeapp.javase.util.StreamInterceptor;
+import com.makeapp.javase.util.URLUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
 

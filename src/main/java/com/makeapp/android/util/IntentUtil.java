@@ -17,8 +17,8 @@ import android.provider.MediaStore;
 import android.webkit.MimeTypeMap;
 import com.makeapp.android.task.AsyncTask;
 import com.makeapp.javase.file.FileUtil;
-import com.makeapp.javase.http.URLUtil;
 import com.makeapp.javase.lang.StringUtil;
+import com.makeapp.javase.util.URLUtil;
 import com.makeapp.javase.util.crypto.Base64;
 
 /**

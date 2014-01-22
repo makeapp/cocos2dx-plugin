@@ -5,7 +5,6 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import com.makeapp.android.util.ServiceUtil;
-import com.makeapp.javase.json.JsonUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,7 +16,7 @@ import java.util.Map;
  * Created by IntelliJ IDEA.
  * User: yuanyou
  * Date: 11-8-19
- * Time: обнГ12:30
+ * Time: О©╫О©╫О©╫О©╫12:30
  */
 public class LocationUtil {
 

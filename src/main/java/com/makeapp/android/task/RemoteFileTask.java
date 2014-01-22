@@ -11,8 +11,8 @@ import com.makeapp.javase.file.FileListener;
 import com.makeapp.javase.file.FileUtil;
 import com.makeapp.javase.http.HttpClient;
 import com.makeapp.javase.http.HttpException;
-import com.makeapp.javase.http.URLUtil;
 import com.makeapp.javase.lang.StringUtil;
+import com.makeapp.javase.util.URLUtil;
 
 /**
  * @author <a href="mailto:yuanyou@makeapp.co">yuanyou</a>
